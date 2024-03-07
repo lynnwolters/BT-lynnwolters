@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    align-items: center;
+
+    padding: 1em;
+
+    background-color: var(--white);
+    box-shadow: 24px 11px 70px 0px rgba(219, 219, 219, 1);
+}
+
+header a {
+    width: 8em;
+}
+
+header a img {
+    width: 100%;
+}
