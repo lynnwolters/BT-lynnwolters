@@ -27,7 +27,16 @@
 
     <!-- HEADER PAGE -->
     <header>
-        <progress id="onderdeel" value="0" max="100">Onderdeel 1</progress>
+        <ul>
+            <hr>
+            <div>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </div>
+        </ul>
         <h1>Aangifte Erfbelasting 2024</h1>
     </header>
 
@@ -38,7 +47,7 @@
             <!-- HEADER FORM -->
             <header>
                 <h2>Onderdeel 1: Gegevens van de overledene</h2>
-                <p>Vul hier de gegevens in van de overledene.</p>
+                <p><i>Vul hier de gegevens in van de overledene.</i></p>
             </header>
 
             <!-- 1A -->
@@ -46,7 +55,7 @@
                 <legend>1a</legend>
                 <div class="grid">
                     <label for="voorletter(s)">
-                        Voorletter(s)
+                        Voorletter(s) *
                         <input type="text" name="voorletter(s)" id="voorletter(s)" minlength="1" required>
                     </label>
                     <label for="tussenvoegsel(s)">
@@ -54,16 +63,16 @@
                         <input type="text" name="tussenvoegsel(s)" id="tussenvoegsel(s)" minlength="1">
                     </label>
                     <label for="achternaam">
-                        Achternaam
+                        Achternaam *
                         <input type="text" name="achternaam" id="achternaam" minlength="1" required>
                     </label>
                 </div>
                 <label for="burgerservicenummer-overledene">
-                    Burgerservicenummer overledene
+                    Burgerservicenummer overledene *
                     <input type="text" name="burgerservicenummer-overledene" id="burgerservicenummer-overledene" pattern="[0-9]{9}" minlength="9" maxlength="9" title="Het burgerservicenummer moet uit 9 cijfers bestaan." required>
                 </label>
                 <label for="overlijdensdatum">
-                    Overlijdensdatum
+                    Overlijdensdatum *
                     <input type="date" name="overlijdensdatum" id="overlijdensdatum" required>
                 </label>
             </fieldset>
@@ -72,7 +81,7 @@
             <fieldset>
                 <legend>1b</legend>
                 <div class="flow">
-                    <p>Was de overledene getrouwd of had de overledene een geregistreerd partner op het moment van overlijden?</p>
+                    <p>Was de overledene getrouwd of had de overledene een geregistreerd partner op het moment van overlijden? *</p>
                     <div>
                         <label for="ja">
                             <input type="radio" name="ja" id="ja" required>
@@ -80,16 +89,16 @@
                         </label>
                         <label for="nee">
                             <input type="radio" name="nee" id="nee" required>
-                            Nee. Ga verder met vraag 1c.
+                            Nee. <i>Ga verder met vraag 1c.</i>
                         </label>
                     </div>
                 </div>
                 <div class="flow">
-                    <p>Hadden de overledene en diens echtgenoot of geregistreerd partner huwelijkse of partnerschaps- voorwaarden laten vastleggen in een notariële akte?</p>
+                    <p>Hadden de overledene en diens echtgenoot of geregistreerd partner huwelijkse of partnerschaps- voorwaarden laten vastleggen in een notariële akte? *</p>
                     <div>
                         <label for="ja">
                             <input type="radio" name="ja" id="ja" required>
-                            Ja. Stuur een kopie van de akte mee met de aangifte.
+                            Ja. <i>Stuur een kopie van de akte mee met de aangifte.</i>
                         </label>
                         <label for="nee">
                             <input type="radio" name="nee" id="nee" required>
@@ -98,7 +107,7 @@
                     </div>
                 </div>
                 <div class="flow">
-                    <p>Hadden de overledene en diens partner een finaal verrekenbeding?</p>
+                    <p>Hadden de overledene en diens partner een finaal verrekenbeding? *</p>
                     <div>
                         <label for="ja">
                             <input type="radio" name="ja" id="ja" required>
@@ -111,7 +120,7 @@
                     </div>
                 </div>
                 <label for="burgerlijke-staat-datum">
-                    Datum huwelijkse of partnerschapsvoorwaarden
+                    Datum huwelijkse of partnerschapsvoorwaarden *
                     <input type="date" name="burgerlijke-staat-datum" id="burgerlijke-staat-datum" required>
                 </label>
             </fieldset>
@@ -120,7 +129,7 @@
             <fieldset>
                 <legend>1c</legend>
                 <div class="flow">
-                    <p>Had de overledene kinderen?</p>
+                    <p>Had de overledene kinderen? *</p>
                     <div>
                         <label for="ja">
                             <input type="radio" name="ja" id="ja" required>
@@ -128,12 +137,12 @@
                         </label>
                         <label for="nee">
                             <input type="radio" name="nee" id="nee" required>
-                            Nee. Ga verder met vraag 1d.
+                            Nee. <i>Ga verder met vraag 1d.</i>
                         </label>
                     </div>
                 </div>
                 <div class="flow">
-                    <p>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</p>
+                    <p>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet? *</p>
                     <div>
                         <label for="ja">
                             <input type="radio" name="ja" id="ja" required>
@@ -141,12 +150,12 @@
                         </label>
                         <label for="nee">
                             <input type="radio" name="nee" id="nee" required>
-                            Nee. Ga verder met vraag 1d.
+                            Nee. <i>Ga verder met vraag 1d.</i>
                         </label>
                     </div>
                 </div>
                 <div class="flow">
-                    <p>Had dit overleden kind zelf kinderen?</p>
+                    <p>Had dit overleden kind zelf kinderen? *</p>
                     <div>
                         <label for="ja">
                             <input type="radio" name="ja" id="ja" required>
@@ -164,25 +173,25 @@
             <fieldset>
                 <legend>1d</legend>
                 <div class="flow">
-                    <p>Had de overledene een testament?</p>
+                    <p>Had de overledene een testament? *</p>
                     <div>
                         <label for="ja">
                             <input type="radio" name="ja" id="ja" required>
-                            Ja. Vul de gegevens in van de notaris die het testament heeft opgemaakt en de datum van het testament.
+                            Ja. <i>Vul de gegevens in van de notaris die het testament heeft opgemaakt en de datum van het testament.</i>
                         </label>
                         <label for="nee">
                             <input type="radio" name="nee" id="nee" required>
-                            Nee. Ga verder met onderdeel 2 op de volgende pagina.
+                            Nee. <i>Ga verder met onderdeel 2 op de volgende pagina.</i>
                         </label>
                     </div>
                 </div>
                 <label for="protocolnummer-notaris">
-                    Protocolnummer notaris
+                    Protocolnummer notaris *
                     <input type="text" name="protocolnummer-notaris" id="protocolnummer-notaris" minlength="1" required>
                 </label>
                 <div class="grid">
                     <label for="voorletter(s)">
-                        Voorletter(s)
+                        Voorletter(s) *
                         <input type="text" name="voorletter(s)" id="voorletter(s)" minlength="1" required>
                     </label>
                     <label for="tussenvoegsel(s)">
@@ -190,16 +199,16 @@
                         <input type="text" name="tussenvoegsel(s)" id="tussenvoegsel(s)" minlength="1">
                     </label>
                     <label for="achternaam">
-                        Achternaam
+                        Achternaam *
                         <input type="text" name="achternaam" id="achternaam" minlength="1" required>
                     </label>
                 </div>
                 <label for="vestigingplaats">
-                    Vestigingplaats
+                    Vestigingplaats *
                     <input type="text" name="vestigingplaats" id="vestigingplaats" minlength="1" required>
                 </label>
                 <label for="testament-datum">
-                    Datum van het testament of van de laatste wijziging
+                    Datum van het testament of van de laatste wijziging *
                     <input type="date" name="testament-datum" id="testament-datum" required>
                 </label>
             </fieldset>
