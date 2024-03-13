@@ -51,7 +51,7 @@ body > header ul {
 }
 
 body > header ul hr {
-    height: .1em;
+    height: .075em;
 
     border: none;
 
@@ -80,7 +80,7 @@ body > header ul div li {
 
     background-color: rgb(32, 86, 125);
 
-    border: .1em solid rgb(32, 86, 125);
+    border: .08em solid rgb(32, 86, 125);
     border-radius: 100%;
 
     color: rgb(255, 255, 255);
