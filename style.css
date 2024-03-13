@@ -1,0 +1,152 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(246, 246, 246);
+    
+    font-family: "Open Sans", sans-serif;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+/* NAV */
+
+nav {
+    height: 6em;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 1em;
+
+    background-color: rgb(255, 255, 255);
+}
+
+nav a {
+    height: 3em;
+}
+
+nav a img {
+    height: 100%;
+}
+
+/* HEADER */
+
+body > header {
+    margin: 4em 24em 0 24em;
+}
+
+body > header progress {
+    width: 100%;
+
+    margin-bottom: 2em;
+}
+
+/* MAIN */
+
+main {
+    margin: 4em 24em 0 24em;
+}
+
+main form {
+    font-size: .75em;
+}
+
+main form > fieldset {
+    margin: 2em 0;
+    padding: 2em;
+
+    border: .075em solid rgb(211, 211, 211);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.flow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+
+    margin-top: 2em;
+}
+
+.flow div label {
+    display: block;
+
+    margin: 0 0 2em 0;
+}
+
+main form fieldset legend {
+    font-weight: bold;
+}
+
+main form fieldset label {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2em;
+}
+
+main form > fieldset:nth-of-type(1) > div label {
+    margin-top: 0;
+}
+
+main form fieldset label input[type="text"], main form fieldset label input[type="date"] {
+    height: 2.4em;
+
+    margin-top: .4em;
+    padding-left: .4em;
+}
+
+main form footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+main form footer a {
+    height: 3em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 1em;
+
+    background-color: rgb(32, 86, 125);
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main form footer a input[type="submit"] {
+    background-color: rgb(32, 86, 125);
+
+    border: none;
+
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+body > footer {
+    height: 6em;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 4em;
+    padding: 0 1em;
+
+    background-color: rgb(255, 255, 255);
+}
