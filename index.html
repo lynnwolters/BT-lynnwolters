@@ -1,118 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
+    <!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
     <title>Aangifte Erfbelasting 2024</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/nav.css">
-    <link rel="stylesheet" href="./styles/form.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
+    <!-- NAV -->
+    <nav>
         <a href="index.html">
-            <img src="./images/logo-belastingdienst.png" alt="logo-belastingdienst">
+            <img src="./images/logo-belastingdienst.png" alt="logo-belastingdienst.png">
         </a>
+    </nav>
+
+    <!-- HEADER PAGE -->
+    <header>
+        <progress id="onderdeel" value="0" max="100">Onderdeel 1</progress>
+        <h1>Aangifte Erfbelasting 2024</h1>
     </header>
 
     <!-- MAIN -->
     <main>
+        <form action="/submit" method="post">
 
-        <!-- NAV -->
-        <nav>
-            <hr>
-            <ul>
-                <li>
-                    <a href="index.html">1</a>
-                </li>
-                <li>
-                    <a href="index.html">2</a>
-                </li>
-                <li>
-                    <a href="index.html">3</a>
-                </li>
-                <li>
-                    <a href="index.html">4</a>
-                </li>
-                <li>
-                    <a href="index.html">5</a>
-                </li>
-            </ul>
-        </nav>
+            <!-- HEADER FORM -->
+            <header>
+                <h2>Onderdeel 1: Gegevens van de overledene</h2>
+                <p>Vul hier de gegevens in van de overledene.</p>
+            </header>
 
-        <!-- FORM -->
-        <form>
-            <h1>1. Gegevens van de overledene</h1>
-            <h2>Vul hier de gegevens in van de overledene</h2>
-            <section>
-                <h3>1A</h3>
-                <article>
-                    <label>
-                        <h4>Voorletter(s) *</h4>
-                        <input type="text">
-                    </label>
-                    <label>
-                        <h4>Tussenvoegsel(s)</h4>
-                        <input type="text">
-                    </label>
-                    <label>
-                        <h4>Achternaam *</h4>
-                        <input type="text">
-                    </label>
-                </article>
-                <article>
-                    <label>
-                        <h4>Burgerservicenummer overledene *</h4>
-                        <input type="number">
-                    </label>
-                </article>
-                <article>
-                    <label>
-                        <h4>Overlijdensdatum</h4>
-                        <input type="date">
-                    </label>
-                </article>
-            </section>
+            <!-- 1A -->
+            <fieldset>
+                <legend>1a</legend>
+                <label for="voorletter(s)">
+                    Voorletter(s)
+                    <input type="text" name="voorletter(s)" id="voorletter(s)" minlength="1" required>
+                </label>
+                <label for="tussenvoegsel(s)">
+                    Tussenvoegsel(s)
+                    <input type="text" name="tussenvoegsel(s)" id="tussenvoegsel(s)" minlength="1">
+                </label>
+                <label for="achternaam">
+                    Achternaam
+                    <input type="text" name="achternaam" id="achternaam" minlength="1" required>
+                </label>
+                <br><br>
+                <label for="burgerservicenummer-overledene">
+                    Burgerservicenummer overledene
+                    <input type="text" name="burgerservicenummer-overledene" id="burgerservicenummer-overledene" pattern="[0-9]{9}" minlength="9" maxlength="9" title="Het burgerservicenummer moet uit 9 cijfers bestaan." required>
+                </label>
+                <br><br>
+                <label for="overlijdensdatum">
+                    Overlijdensdatum
+                    <input type="date" name="overlijdensdatum" id="overlijdensdatum" required>
+                </label>
+            </fieldset>
 
-            <section>
-                <h3>1B</h3>
-                <article>
-                    <label>
-                        <h4>Voorletter(s) *</h4>
-                        <input type="text">
+            <!-- 1B -->
+            <fieldset>
+                <legend>1b</legend>
+                <fieldset>
+                    <legend>Was de overledene getrouwd of had de overledene een geregistreerd partner op het moment van overlijden?</legend>
+                    <label for="ja">
+                        <input type="radio" name="ja" id="ja" required>
+                        Ja
                     </label>
-                    <label>
-                        <h4>Tussenvoegsel(s)</h4>
-                        <input type="text">
+                    <label for="nee">
+                        <input type="radio" name="nee" id="nee" required>
+                        Nee. Ga verder met vraag 1c.
                     </label>
-                    <label>
-                        <h4>Achternaam *</h4>
-                        <input type="text">
+                </fieldset>
+                <fieldset>
+                    <legend>Hadden de overledene en diens echtgenoot of geregistreerd partner huwelijkse of partnerschaps- voorwaarden laten vastleggen in een notariële akte?</legend>
+                    <label for="ja">
+                        <input type="radio" name="ja" id="ja" required>
+                        Ja. Stuur een kopie van de akte mee met de aangifte.
                     </label>
-                </article>
-                <article>
-                    <label>
-                        <h4>Burgerservicenummer overledene *</h4>
-                        <input type="number">
+                    <label for="nee">
+                        <input type="radio" name="nee" id="nee" required>
+                        Nee
                     </label>
-                </article>
-                <article>
-                    <label>
-                        <h4>Overlijdensdatum</h4>
-                        <input type="date">
+                </fieldset>
+                <fieldset>
+                    <legend>Hadden de overledene en diens partner een finaal verrekenbeding?</legend>
+                    <label for="ja">
+                        <input type="radio" name="ja" id="ja" required>
+                        Ja
                     </label>
-                </article>
-            </section>
+                    <label for="nee">
+                        <input type="radio" name="nee" id="nee" required>
+                        Nee
+                    </label>
+                </fieldset>
+                <label for="burgerlijke-staat-datum">
+                    Datum huwelijkse of partnerschapsvoorwaarden
+                    <input type="date" name="burgerlijke-staat-datum" id="burgerlijke-staat-datum" required>
+                </label>
+            </fieldset>
+
+            <!-- 1C -->
+            <fieldset>
+                <legend>1c</legend>
+                <fieldset>
+                    <legend>Had de overledene kinderen?</legend>
+                    <label for="ja">
+                        <input type="radio" name="ja" id="ja" required>
+                        Ja
+                    </label>
+                    <label for="nee">
+                        <input type="radio" name="nee" id="nee" required>
+                        Nee. Ga verder met vraag 1d.
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>
+                    <label for="ja">
+                        <input type="radio" name="ja" id="ja" required>
+                        Ja
+                    </label>
+                    <label for="nee">
+                        <input type="radio" name="nee" id="nee" required>
+                        Nee. Ga verder met vraag 1d.
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Had dit overleden kind zelf kinderen?</legend>
+                    <label for="ja">
+                        <input type="radio" name="ja" id="ja" required>
+                        Ja
+                    </label>
+                    <label for="nee">
+                        <input type="radio" name="nee" id="nee" required>
+                        Nee
+                    </label>
+                </fieldset>
+            </fieldset>
+
+            <!-- 1D -->
+            <fieldset>
+                <legend>1d</legend>
+                <fieldset>
+                    <legend>Had de overledene een testament?</legend>
+                    <label for="ja">
+                        <input type="radio" name="ja" id="ja" required>
+                        Ja. Vul de gegevens in van de notaris die het testament heeft opgemaakt en de datum van het testament.
+                    </label>
+                    <label for="nee">
+                        <input type="radio" name="nee" id="nee" required>
+                        Nee. Ga verder met onderdeel 2 op de volgende pagina.
+                    </label>
+                </fieldset>
+                <label for="protocolnummer-notaris">
+                    Protocolnummer notaris
+                    <input type="text" name="protocolnummer-notaris" id="protocolnummer-notaris" minlength="1" required>
+                </label>
+                <br><br>
+                <label for="voorletter(s)">
+                    Voorletter(s)
+                    <input type="text" name="voorletter(s)" id="voorletter(s)" minlength="1" required>
+                </label>
+                <label for="tussenvoegsel(s)">
+                    Tussenvoegsel(s)
+                    <input type="text" name="tussenvoegsel(s)" id="tussenvoegsel(s)" minlength="1">
+                </label>
+                <label for="achternaam">
+                    Achternaam
+                    <input type="text" name="achternaam" id="achternaam" minlength="1" required>
+                </label>
+                <br><br>
+                <label for="vestigingplaats">
+                    Vestigingplaats
+                    <input type="text" name="vestigingplaats" id="vestigingplaats" minlength="1" required>
+                </label>
+                <br><br>
+                <label for="testament-datum">
+                    Datum van het testament of van de laatste wijziging
+                    <input type="date" name="testament-datum" id="testament-datum" required>
+                </label>
+            </fieldset>
+
+            <!-- FOOTER FORM -->
+            <footer>
+                <a href="#">Terug</a>
+                <a href="#">
+                    <input type="submit" value="Ga naar het volgende onderdeel">
+                </a>
+            </footer>
         </form>
 
     </main>
+
+    <!-- FOOTER PAGE -->
+    <footer>
+        <p>© Belastingdienst 2024</p>
+    </footer>
 
 </body>
 </html>
