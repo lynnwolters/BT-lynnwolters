@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: var(--light-gray);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+p, a, label, legend {
+    font-size: .8em;
+    line-height: 130%;
+}
+
+:root {
+    --white: #FFFFFF;
+    --light-gray: #FAFAFA;
+    --dark-gray: #ACACA8;
+    --black: #000000;
+    --red: #F42626;
+    --green: #119316;
+    --blue: #00588E;
+
+    --border: .02em solid var(--dark-gray);
+}

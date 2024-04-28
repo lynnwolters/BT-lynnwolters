@@ -1,0 +1,12 @@
+footer {
+    height: 6em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1em;
+
+    background-color: var(--white);
+    box-shadow: 0px -12px 40px 0px rgba(0, 0, 0, 0.2);
+}
