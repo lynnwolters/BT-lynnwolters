@@ -28,7 +28,7 @@ h2 {
     font-size: 1.4em;
 }
 
-p, a, label, legend {
+p, a, label, legend, i {
     font-size: .8em;
     line-height: 130%;
 }

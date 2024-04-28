@@ -24,10 +24,6 @@ nav ul li {
     width: 2.4em;
     aspect-ratio: 1/1;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     border: var(--border);
     border-radius: 100%;
 
@@ -35,5 +31,12 @@ nav ul li {
 }
 
 nav ul li a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     color: var(--dark-gray);
 }
