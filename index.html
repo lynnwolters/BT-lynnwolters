@@ -45,215 +45,530 @@
 
     <main>
         <form action="#" method="post">
-            <h1>Aangifte Erfbelasting 2024</h1>
-
+            <article>
+                <h1>Aangifte Erfbelasting 2024</h1>
+                <a href="#eersteOnderdeel">Start</a>
+            </article>
+            <!-- EERSTE ONDERDEEL -->
             <section id="eersteOnderdeel">
+                <!-- TITEL EN BESCHRIJVING EERSTE ONDERDEEL -->
                 <h2>Onderdeel 1: Gegevens van de overledene</h2>
-                <i>Vul hier de gegevens in van de overledene.</i>
+                <p><i>Vul hier de gegevens in van de overledene.</i></p>
+                <!-- 1A -->
                 <fieldset>
                     <legend>1A</legend>
-                    <div class="input-group-text">
-                        <label>
+                    <div class="grid-1">
+                        <label for="voorletter(s)">
                             Voorletter(s)
-                            <input type="text">
+                            <input type="text" name="voorletter(s)">
                         </label>
-                        <label>
+                        <label for="tussenvoegsel(s)">
                             Tussenvoegsel(s)
-                            <input type="text">
+                            <input type="text" name="tussenvoegsel(s)">
                         </label>
-                        <label>
+                        <label for="achternaam">
                             Achternaam
-                            <input type="text"> 
+                            <input type="text" name="achternaam">
                         </label>
                     </div>
-                    <label>
+                    <label for="burgerservicenummer-overledene">
                         Burgerservicenummer overledene
-                        <input type="number">
+                        <input type="number" name="burgerservicenummer-overledene">
                     </label>
-                    <label>
+                    <label for="overlijdensdatum">
                         Overlijdensdatum
-                        <input type="date">
+                        <input type="date" name="overlijdensdatum">
                     </label>
                 </fieldset>
+                <!-- 1B -->
                 <fieldset>
                     <legend>1B</legend>
-                    <div class="input-group-radio">
+                    <div class="grid-2">
                         <p>Was de overledene getrouwd of had de overledene een geregistreerd partner op het moment van overlijden?</p>
                         <div>
-                            <label>
-                                <input type="radio" name="radio-1b-1">
-                                Ja
-                            </label>
-                            <label>
+                            <label name="radio-1b-1">
                                 <input type="radio" name="radio-1b-1">
                                 Nee. Ga verder met vraag 1C.
                             </label>
+                            <label name="radio-1b-1">
+                                <input type="radio" name="radio-1b-1">
+                                Ja
+                            </label>
                         </div>
                     </div>
-                    <div class="input-group-radio">
+                    <div class="grid-2">
                         <p>Hadden de overledene en diens echtgenoot of geregistreerd partner huwelijkse of partnerschaps- voorwaarden laten vastleggen in een notariële akte?</p>
                         <div>
-                            <label>
+                            <label name="radio-1b-2">
+                                <input type="radio" name="radio-1b-2">
+                                Nee
+                            </label>
+                            <label name="radio-1b-2">
                                 <input type="radio" name="radio-1b-2">
                                 Ja. Stuur een kopie van de akte mee met de aangifte.
                             </label>
-                            <label>
-                                <input type="radio" name="radio-1b-2">
-                                Nee
-                            </label>
                         </div>
                     </div>
-                    <div class="input-group-radio">
+                    <div class="grid-2">
                         <p>Hadden de overledene en diens partner een finaal verrekenbeding?</p>
                         <div>
-                            <label>
-                                <input type="radio" name="radio-1b-3">
-                                Ja
-                            </label>
-                            <label>
+                            <label name="radio-1b-3">
                                 <input type="radio" name="radio-1b-3">
                                 Nee
                             </label>
+                            <label name="radio-1b-3">
+                                <input type="radio" name="radio-1b-3">
+                                Ja
+                            </label>
                         </div>
                     </div>
-                    <label>
+                    <label for="datum-huwelijkse-of-partnerschapsvoorwaarden">
                         Datum huwelijkse of partnerschapsvoorwaarden
-                        <input type="date">
+                        <input type="date" name="datum-huwelijkse-of-partnerschapsvoorwaarden">
                     </label>
                 </fieldset>
+                <!-- 1C -->
                 <fieldset>
                     <legend>1C</legend>
-                    <div class="input-group-radio">
+                    <div class="grid-2">
                         <p>Had de overledene kinderen?</p>
                         <div>
-                            <label>
-                                <input type="radio" name="radio-1c-1">
-                                Ja
-                            </label>
-                            <label>
-                                <input type="radio" name="radio-1c-1">
+                            <label name="radio-1c-1">
+                                <input type="radio" name="radio-1b-1">
                                 Nee. Ga verder met vraag 1D.
+                            </label>
+                            <label name="radio-1c-1">
+                                <input type="radio" name="radio-1b-1">
+                                Ja
                             </label>
                         </div>
                     </div>
-                    <div class="input-group-radio">
+                    <div class="grid-2">
                         <p>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</p>
                         <div>
-                            <label>
-                                <input type="radio" name="radio-1c-2">
-                                Ja
-                            </label>
-                            <label>
-                                <input type="radio" name="radio-1c-2">
+                            <label name="radio-1c-2">
+                                <input type="radio" name="radio-1b-2">
                                 Nee. Ga verder met vraag 1D.
                             </label>
-                        </div>
-                    </div>
-                    <div class="input-group-radio">
-                        <p>Had dit overleden kind zelf kinderen?</p>
-                        <div>
-                            <label>
-                                <input type="radio" name="radio-1c-3">
+                            <label name="radio-1c-2">
+                                <input type="radio" name="radio-1b-2">
                                 Ja
                             </label>
-                            <label>
-                                <input type="radio" name="radio-1c-3">
+                        </div>
+                    </div>
+                    <div class="grid-2">
+                        <p>Had dit overleden kind zelf kinderen?</p>
+                        <div>
+                            <label name="radio-1c-3">
+                                <input type="radio" name="radio-1b-3">
                                 Nee
                             </label>
+                            <label name="radio-1c-3">
+                                <input type="radio" name="radio-1b-3">
+                                Ja
+                            </label>
                         </div>
                     </div>
                 </fieldset>
+                <!-- 1D -->
                 <fieldset>
                     <legend>1D</legend>
-                    <div class="input-group-radio">
+                    <div class="grid-2">
                         <p>Had de overledene een testament?</p>
                         <div>
-                            <label>
-                                <input type="radio" name="radio-1d-1">
-                                Ja. Vul de gegevens in van de notaris die het testament heeft opgemaakt en de datum van het testament.
+                            <label name="radio-1d-1">
+                                <input type="radio" name="radio-1b-1">
+                                Nee. Ga verder met het volgende onderdeel.
                             </label>
-                            <label>
-                                <input type="radio" name="radio-1d-1">
-                                Nee. Ga naar het volgende onderdeel.
+                            <label name="radio-1d-1">
+                                <input type="radio" name="radio-1b-1">
+                                Ja. Vul de gegevens in van de notaris die het testament heeft opgemaakt en de datum van het testament.
                             </label>
                         </div>
                     </div>
-                    <label>
+                    <label for="protocolnummer-notaris">
                         Protocolnummer notaris
-                        <input type="number">
+                        <input type="number" name="protocolnummer-notaris">
                     </label>
-                    <div class="input-group-text">
-                        <label>
+                    <div class="grid-1">
+                        <label for="voorletter(s)">
                             Voorletter(s)
-                            <input type="text">
+                            <input type="text" name="voorletter(s)">
                         </label>
-                        <label>
+                        <label for="tussenvoegsel(s)">
                             Tussenvoegsel(s)
-                            <input type="text">
+                            <input type="text" name="tussenvoegsel(s)">
                         </label>
-                        <label>
+                        <label for="achternaam">
                             Achternaam
-                            <input type="text"> 
+                            <input type="text" name="achternaam">
                         </label>
                     </div>
-                    <label>
+                    <label for="vestigingsplaats">
                         Vestigingsplaats
-                        <input type="text">
+                        <input type="text" name="vestigingsplaats">
                     </label>
-                    <label>
-                        Datum van het testament of van de laatste wijziging
-                        <input type="date">
+                    <label for="datum-van-testament">
+                        Datum van testament
+                        <input type="date" name="datum-van-testament">
                     </label>
                 </fieldset>
+                <!-- EERSTE ONDERDEEL TERUG EN VOLGENDE -->
                 <div>
                     <a href="#eersteOnderdeel">Terug</a>
                     <a href="#tweedeOnderdeel">Volgende</a>
                 </div>
             </section>
 
+            <!-- TWEEDE ONDERDEEL -->
             <section id="tweedeOnderdeel">
+                <!-- TITEL EN BESCHRIJVING TWEEDE ONDERDEEL -->
                 <h2>Onderdeel 2: Gegevens gemachtigde</h2>
-                <i>Vul de gegevens van de gemachtigde in. De gemachtigde is degene die namens 1 of meerdere personen en/of instellingen aangifte doet. Het invullen van een telefoonnummer of e-mailadres is niet verplicht, maar wel handig. Dan kunnen wij u makkelijker vragen stellen of uitleg geven.</i>
+                <p><i>Vul de gegevens van de gemachtigde in. De gemachtigde is degene die namens 1 of meerdere personen en/of instellingen aangifte doet. Het invullen van een telefoonnummer of e-mailadres is niet verplicht, maar wel handig. Dan kunnen wij u makkelijker vragen stellen of uitleg geven.</i></p>
+                <!-- 2A -->
                 <fieldset>
                     <legend>2A</legend>
-                    <i>Vul 1 van de 3 in: het burgerservicenummer of RSIN van de gemachtigde, het beconnummer van de adviseur of het protocolnummer van de notaris.</i>
-                    <label>
-                        Burgerservicenummer/ RSIN gemachtigde
-                        <input type="number">
+                    <p><i>Vul 1 van de 3 in: het burgerservicenummer of RSIN van de gemachtigde, het beconnummer van de adviseur of het protocolnummer van de notaris.</i></p>
+                    <label for="burgerservicenummer-rsin-gemachtigde">
+                        Burgerservicenummer / RSIN gemachtigde
+                        <input type="number" name="burgerservicenummer-rsin-gemachtigde">
                     </label>
-                    <label>
+                    <label for="beconnummer-adviseur">
                         Beconnummer adviseur
-                        <input type="number">
+                        <input type="number" name="beconnummer-adviseur">
                     </label>
-                    <label>
+                    <label for="protocolnummer-notaris">
                         Protocolnummer notaris
-                        <input type="number">
+                        <input type="number" name="protocolnummer-notaris">
+                    </label>
+                    <div class="grid-1">
+                        <label for="voorletter(s)">
+                            Voorletter(s)
+                            <input type="text" name="voorletter(s)">
+                        </label>
+                        <label for="tussenvoegsel(s)">
+                            Tussenvoegsel(s)
+                            <input type="text" name="tussenvoegsel(s)">
+                        </label>
+                        <label for="achternaam">
+                            Achternaam
+                            <input type="text" name="achternaam">
+                        </label>
+                    </div>
+                    <label for="naam-instelling">
+                        Naam instelling (bijvoorbeeld een notariskantoor)
+                        <input type="text" name="naam-instelling">
+                    </label>
+                    <p><b>Adres in Nederland</b></p>
+                    <div class="grid-1">
+                        <label for="straat">
+                            Straat
+                            <input type="text" name="straat">
+                        </label>
+                        <label for="huisnummer">
+                            Huisnummer
+                            <input type="number" name="huisnummer">
+                        </label>
+                        <label for="toevoeging">
+                            Toevoeging
+                            <input type="text" name="toevoeging">
+                        </label>
+                        <label for="postcode">
+                            Postcode
+                            <input type="text" name="Postcode">
+                        </label>
+                        <label for="woonplaats">
+                            Woonplaats
+                            <input type="text" name="woonplaats">
+                        </label>
+                    </div>
+                    <p><b>Adres in het buitenland</b></p>
+                    <div class="grid-1">
+                        <label for="straat">
+                            Straat
+                            <input type="text" name="straat">
+                        </label>
+                        <label for="huisnummer">
+                            Huisnummer
+                            <input type="number" name="huisnummer">
+                        </label>
+                        <label for="postcode">
+                            Postcode
+                            <input type="text" name="Postcode">
+                        </label>
+                        <label for="woonplaats">
+                            Woonplaats
+                            <input type="text" name="woonplaats">
+                        </label>
+                        <label for="landcode">
+                            Landcode
+                            <input type="number" name="landcode">
+                        </label>
+                    </div>
+                    <label for="telefoonnummer">
+                        Telefoonnummer
+                        <input type="number" name="telefoonnummer">
+                    </label>
+                    <label for="e-mailadres">
+                        E-mailadres
+                        <input type="email" name="e-mailadres">
                     </label>
                 </fieldset>
-                <fieldset>
-                    <legend>2B</legend>
-                </fieldset>
+                <!-- TWEEDE ONDERDEEL TERUG EN VOLGENDE -->
                 <div>
                     <a href="#eersteOnderdeel">Terug</a>
                     <a href="#derdeOnderdeel">Volgende</a>
                 </div>
             </section>
 
+            <!-- DERDE ONDERDEEL -->
             <section id="derdeOnderdeel">
+                <!-- TITEL EN BESCHRIJVING DERDE ONDERDEEL -->
+                <h2>Onderdeel 3: Voor wie doet u aangifte?</h2>
+                <fieldset>
+                    <legend>3A</legend>
+                    <p><i>Heeft de overledene in het testament een executeur aangewezen om de erfenis af te handelen? Dan moet de executeur aangifte doen voor alle personen en/of instellingen die iets krijgen uit de nalatenschap (verkrijgers). Lees de toelichting bij vraag 3a.</i></p>
+                    <div class="grid-3">
+                        <label for="radio-3a-1">
+                            <input type="radio" name="radio-3a-1">
+                            Ik ben executeur en doe aangifte voor alle personen en/of instellingen die iets krijgen uit de nalatenschap (verkrijgers). Geef aan voor hoeveel verkrijgers u aangifte doet. Bent u zelf ook verkrijger? Tel uzelf dan ook mee.
+                        </label>
+                        <label for="aantal-verkrijgers">
+                            Aantal verkrijgers
+                            <input type="number" name="aantal-verkrijgers">
+                        </label>
+                    </div>
+                    <p><b>Is er geen executeur aangewezen? Kruis dan aan welke situatie voor u geldt.</b></p>
+                    <div class="grid-3">
+                        <label for="radio-3a-1">
+                            <input type="radio" name="radio-3a-1">
+                            Ik ben erfgenaam en ben gemachtigd om aangifte te doen voor meerdere personen en/of instellingen die iets krijgen uit de nalatenschap (verkrijgers). Geef aan voor hoeveel verkrijgers u aangifte doet. Tel uzelf ook mee.
+                        </label>
+                        <label for="aantal-verkrijgers">
+                            Aantal verkrijgers
+                            <input type="number" name="aantal-verkrijgers">
+                        </label>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="grid-3">
+                        <label for="radio-3a-1">
+                            <input type="radio" name="radio-3a-1">
+                            Ik ben erfgenaam en doe samen met andere erfgenamen aangifte. Geef het aantal personen en/of instellingen aan die iets krijgen uit de nalatenschap (verkrijgers). Tel uzelf ook mee.
+                        </label>
+                        <label for="aantal-verkrijgers">
+                            Aantal verkrijgers
+                            <input type="number" name="aantal-verkrijgers">
+                        </label>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="grid-3">
+                        <label for="radio-3a-1">
+                            <input type="radio" name="radio-3a-1">
+                            Ik ben erfgenaam en doe alleen aangifte voor mijzelf.
+                        </label>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="grid-3">
+                        <label for="radio-3a-1">
+                            <input type="radio" name="radio-3a-1">
+                            Ik ben geen erfgenaam, maar ben gemachtigd om aangifte te doen. Geef aan voor hoeveel verkrijgers u aangifte doet.
+                        </label>
+                        <label for="aantal-verkrijgers">
+                            Aantal verkrijgers
+                            <input type="number" name="aantal-verkrijgers">
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>3B</legend>
+                    <div class="grid-2">
+                        <p>Zijn er verkrijgers voor wie u <b>geen</b> aangifte doet?</p>
+                        <div>
+                            <label name="radio-3b-1">
+                                <input type="radio" name="radio-3b-1">
+                                Nee. Ga verder met vraag 3C.
+                            </label>
+                            <label name="radio-3b-1">
+                                <input type="radio" name="radio-3b-1">
+                                Ja. Vul hieronder de gegevens in van de verkrijgers waarvoor u geen aangifte doet. Gaat het om een instelling? Vul dan de naam van de instelling in bij ‘achternaam’. Het invullen van een bsn is niet verplicht, maar wel handig voor ons.
+                            </label>
+                        </div>
+                    </div>
+                    <p><b>Verkrijger 1</b></p>
+                    <div class="grid-1">
+                        <label for="burgerservicenummer-rsin">
+                            Burgerservicenummer / RSIN
+                            <input type="number" name="burgerservicenummer-rsin">
+                        </label>
+                        <label for="voorletter(s)">
+                            Voorletter(s)
+                            <input type="text" name="voorletter(s)">
+                        </label>
+                        <label for="tussenvoegsel(s)">
+                            Tussenvoegsel(s)
+                            <input type="text" name="tussenvoegsel(s)">
+                        </label>
+                        <label for="achternaam">
+                            Achternaam
+                            <input type="text" name="achternaam">
+                        </label>
+                    </div>
+                    <div class="grid-2">
+                        <p>Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?</p>
+                        <div>
+                            <label name="radio-3b-2">
+                                <input type="radio" name="radio-3b-2">
+                                Nee
+                            </label>
+                            <label name="radio-3b-2">
+                                <input type="radio" name="radio-3b-2">
+                                Ja
+                            </label>
+                        </div>
+                    </div>
+                    <div class="grid-2">
+                        <p>Doet deze verkrijger een beroep op diens legitieme portie (wettelijke erfdeel)?</p>
+                        <div>
+                            <label name="radio-3b-2">
+                                <input type="radio" name="radio-3b-3">
+                                Nee
+                            </label>
+                            <label name="radio-3b-2">
+                                <input type="radio" name="radio-3b-3">
+                                Ja
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>3C</legend>
+                    <p><b>Naar wie wilt u dat wij de aanslag erfbelasting sturen?</b></p>
+                    <div class="grid-3">
+                        <label for="radio-3c-1">
+                            <input type="radio" name="radio-3c-1">
+                            Stuur naar iedere verkrijger van (een deel van) de erfenis een eigen belastingaanslag.
+                        </label>
+                    </div>
+                    <div class="grid-3">
+                        <label for="radio-3c-2">
+                            <input type="radio" name="radio-3c-2">
+                            Stuur de belastingaanslag(en) naar de executeur of naar de erfgenaam die ook namens andere personen en/of instellingen die iets krijgen uit de nalatenschap (verkrijgers) aangifte heeft gedaan; dit mag ook de gemachtigde zijn. Wij sturen de aanslag(en) naar het adres dat u bij vraag 2 hebt ingevuld.
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>3D</legend>
+                    <p><b>Ondertekening door executeur of gemachtigde</b></p>
+                    <p>
+                        Onderteken deze aangifte als volgt:
+                        <ul>
+                            <li>- Bent u executeur? Dan moet u aangifte doen voor alle personen en/of instellingen die iets krijgen uit de nalatenschap (verkrijgers). U ondertekent als enige dit aangifteformulier.</li>
+                            <li>- Bent u gemachtigde? Dan ondertekent u dit aangifteformulier voor de personen door wie u gemachtigd bent. Zij hoeven het aangifteformulier niet zelf te ondertekenen.</li>
+                            <li>- Bent u erfgenaam en doet u samen met andere erfgenamen aangifte? Dan moeten de erfgenamen het aangifteformulier zelf ondertekenen bij vraag 4g.</li>
+                            <li>- Bent u erfgenaam en doet u alleen voor uzelf aangifte? Dan ondertekent u het aangifteformulier zelf bij vraag 4g.</li>
+                        </ul>
+                    </p>
+                    <div class="grid-2">
+                        <p>Bent u executeur of gemachtigde?</p>
+                        <div>
+                            <label name="radio-3d-1">
+                                <input type="radio" name="radio-3d-1">
+                                Nee. Ga verder naar het volgende onderdeel.
+                            </label>
+                            <label name="radio-3d-1">
+                                <input type="radio" name="radio-3d-1">
+                                Ja
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>3E</legend>
+                    <p><b>Gegevens van de executeur of gemachtigde</b></p>
+                    <label for="burgerservicenummer-rsin">
+                        Burgerservicenummer / RSIN
+                        <input type="number" name="burgerservicenummer-rsin">
+                    </label>
+                    <label for="protocolnummer">
+                        Protocolnummer (als de executeur ook notaris is)
+                        <input type="number" name="protocolnummer">
+                    </label>
+                    <label for="beconnummer-adviseur">
+                        Beconnummer van de adviseur
+                        <input type="number" name="beconnummer-adviseur">
+                    </label>
+                    <div class="grid-1">
+                        <label for="voorletter(s)">
+                            Voorletter(s)
+                            <input type="text" name="voorletter(s)">
+                        </label>
+                        <label for="tussenvoegsel(s)">
+                            Tussenvoegsel(s)
+                            <input type="text" name="tussenvoegsel(s)">
+                        </label>
+                        <label for="achternaam">
+                            Achternaam
+                            <input type="text" name="achternaam">
+                        </label>
+                    </div>
+                    <label for="naam-instelling">
+                        Naam instelling (bijvoorbeeld een notariskantoor)
+                        <input type="text" name="naam-instelling">
+                    </label>
+                    <div class="grid-1">
+                        <label for="straat">
+                            Straat
+                            <input type="text" name="straat">
+                        </label>
+                        <label for="huisnummer">
+                            Huisnummer
+                            <input type="number" name="huisnummer">
+                        </label>
+                        <label for="toevoeging">
+                            Toevoeging
+                            <input type="text" name="toevoeging">
+                        </label>
+                        <label for="postcode">
+                            Postcode
+                            <input type="text" name="postcode">
+                        </label>
+                        <label for="woonplaats">
+                            Woonplaats
+                            <input type="text" name="woonplaats">
+                        </label>
+                    </div>
+                    <label for="datum">
+                        Datum
+                        <input type="date" name="datum">
+                    </label>
+                    <label for="handtekening">
+                        Handtekening
+                        <input type="text" name="handtekening">
+                    </label>
+                </fieldset>
+                <!-- DERDE ONDERDEEL TERUG EN VOLGENDE -->
                 <div>
                     <a href="#tweedeOnderdeel">Terug</a>
                     <a href="#vierdeOnderdeel">Volgende</a>
                 </div>
             </section>
 
+            <!-- VIERDE ONDERDEEL -->
             <section id="vierdeOnderdeel">
+                <!-- TITEL EN BESCHRIJVING VIERDE ONDERDEEL -->
+                <h2>Onderdeel 4: Gegevens verkrijgers</h2>
+                <!-- VIERDE ONDERDEEL TERUG EN VOLGENDE -->
                 <div>
                     <a href="#derdeOnderdeel">Terug</a>
                     <a href="#vijfdeOnderdeel">Volgende</a>
                 </div>
             </section>
 
+            <!-- VIJFDE ONDERDEEL -->
             <section id="vijfdeOnderdeel">
+                <!-- TITEL EN BESCHRIJVING VIJFDE ONDERDEEL -->
+                <h2>Onderdeel 5: Samenstelling van de erfenis</h2>
+                <!-- VIJFDE ONDERDEEL TERUG EN VOLGENDE -->
                 <div>
                     <a href="#vierdeOnderdeel">Terug</a>
                     <input type="submit"/>
