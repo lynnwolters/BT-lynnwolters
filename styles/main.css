@@ -2,7 +2,7 @@ main {
     margin: 0 25%;
 }
 
-main form article {
+main form section:nth-of-type(1) {
     height: calc(100dvh - 18em);
 
     display: flex;
@@ -10,12 +10,14 @@ main form article {
     flex-direction: column;
 }
 
-main form article h1 {
+main form section:nth-of-type(1) h1 {
     margin: 2em 0;
 }
 
-main form article a {
+main form section:nth-of-type(1) a {
     padding: .8em 1.4em;
+
+    border-radius: .2em;
 
     background-color: var(--dark-blue);
 
@@ -31,23 +33,26 @@ main form section h2 {
 }
 
 main form section > p {
-    margin-top: .6em;
+    margin-top: 1em;
 }
 
 main form section fieldset {
     margin-top: 2em;
-    padding: 1em;
+    padding: 2em 2em;
 
     border: var(--border);
+    border-radius: .2em;
+
+    background-color: var(--light-gray);
 }
 
 main form section fieldset p {
-    margin-bottom: .6em;
+    margin-bottom: 1em;
 }
 
 main form section fieldset label input[type=text], main form section fieldset label input[type=number], main form section fieldset label input[type=date], main form section fieldset label input[type=email] {
     width: 100%;
-    height: 2.2em;
+    height: 2em;
 
     display: block;
 
@@ -55,6 +60,9 @@ main form section fieldset label input[type=text], main form section fieldset la
     padding: 0 .6em;
 
     border: var(--border);
+    border-radius: .2em;
+    
+    background-color: var(--white);
 
     color: var(--dark-gray);
 }
@@ -68,6 +76,8 @@ main form section > div {
 
 main form section > div a {
     padding: .8em 1.4em;
+
+    border-radius: .2em;
 
     background-color: var(--dark-blue);
 
@@ -111,4 +121,28 @@ main form section > div a:hover {
     justify-self: start;
 
     margin-bottom: .6em;
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        margin: 0 20%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    main {
+        margin: 0 15%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    main {
+        margin: 0 8%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main {
+        margin: 0 4%;
+    }
 }

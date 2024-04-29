@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: var(--light-gray);
+    background-color: var(--white);
 }
 
 li {
@@ -28,7 +28,7 @@ h2 {
     font-size: 1.2em;
 }
 
-p, a, legend, label, input, li {
+p, a, legend, label, li {
     font-size: .8em;
 }
 
@@ -43,7 +43,7 @@ p, a, legend, label, input, li {
 
 :root {
     --white: #FFFFFF;
-    --light-gray: #FAFAFA;
+    --light-gray: #f3f3f3;
     --dark-gray: #ACACA8;
     --black: #000000;
     --red: #F42626;
