@@ -41,6 +41,14 @@ p, a, legend, label, li {
     background-color: var(--dark-gray);
 }
 
+input:not(.input-untouched):valid {
+    border: var(--border-valid);
+}
+
+input:not(.input-untouched):invalid {
+    border: var(--border-invalid);
+}
+
 :root {
     --white: #FFFFFF;
     --light-gray: #f3f3f3;
@@ -52,4 +60,6 @@ p, a, legend, label, li {
     --light-blue: #248ed0;
 
     --border: .02em solid var(--dark-gray);
+    --border-valid: .1em solid var(--green);
+    --border-invalid: .1em solid var(--red);
 }

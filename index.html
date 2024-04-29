@@ -62,25 +62,25 @@
                     <legend><b>1A</b></legend>
                     <div class="grid-1">
                         <label>
-                            Voorletter(s)
-                            <input type="text" name="voorletter(s)-overledende" minlength="1" required>
+                            Voorletter(s) *
+                            <input class="input-untouched" type="text" name="voorletter(s)-overledende" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                         <label>
                             Tussenvoegsel(s)
-                            <input type="text" name="tussenvoegsel(s)-overledende">
+                            <input class="input-untouched" type="text" name="tussenvoegsel(s)-overledende" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
                         </label>
                         <label>
-                            Achternaam
-                            <input type="text" name="achternaam-overledende" minlength="1" required>
+                            Achternaam *
+                            <input class="input-untouched" type="text" name="achternaam-overledende" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                     </div>
                     <label>
-                        Burgerservicenummer
-                        <input type="number" name="burgerservicenummer-overledene" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" required>
+                        Burgerservicenummer *
+                        <input class="input-untouched" type="number" name="burgerservicenummer-overledene" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" required title="Alleen cijfers toegestaan.">
                     </label>
                     <label>
-                        Overlijdensdatum
-                        <input type="date" name="overlijdensdatum-overledende" required>
+                        Overlijdensdatum *
+                        <input class="input-untouched" type="date" name="overlijdensdatum-overledende" required>
                     </label>
                 </fieldset>
                 <!-- 1B -->
@@ -126,8 +126,8 @@
                         </div>
                     </div>
                     <label>
-                        Datum huwelijkse of partnerschapsvoorwaarden
-                        <input type="date" name="datum-huwelijkse-of-partnerschapsvoorwaarden-overledende" required>
+                        Datum huwelijkse of partnerschapsvoorwaarden *
+                        <input class="input-untouched" type="date" name="datum-huwelijkse-of-partnerschapsvoorwaarden-overledende" required>
                     </label>
                 </fieldset>
                 <!-- 1C -->
@@ -190,30 +190,30 @@
                         </div>
                     </div>
                     <label>
-                        Protocolnummer
-                        <input type="number" name="protocolnummer-notaris" minlength="1" pattern="[0-9]" inputmode="numeric" required>
+                        Protocolnummer *
+                        <input class="input-untouched" type="number" name="protocolnummer-notaris" minlength="1" pattern="[0-9]" inputmode="numeric" required title="Alleen cijfers toegestaan.">
                     </label>
                     <div class="grid-1">
                         <label>
-                            Voorletter(s) 
-                            <input type="text" name="voorletter(s)-notaris" minlength="1" required>
+                            Voorletter(s) *
+                            <input class="input-untouched" type="text" name="voorletter(s)-notaris" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                         <label>
                             Tussenvoegsel(s)
-                            <input type="text" name="tussenvoegsel(s)-notaris">
+                            <input class="input-untouched" type="text" name="tussenvoegsel(s)-notaris" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
                         </label>
                         <label>
-                            Achternaam
-                            <input type="text" name="achternaam-notaris" minlength="1" required>
+                            Achternaam *
+                            <input class="input-untouched" type="text" name="achternaam-notaris" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                     </div>
                     <label>
-                        Vestigingsplaats
-                        <input type="text" name="vestigingsplaats-notaris" minlength="1" required>
+                        Vestigingsplaats *
+                        <input class="input-untouched" type="text" name="vestigingsplaats-notaris" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                     </label>
                     <label>
-                        Datum van testament
-                        <input type="date" name="datum-van-testament-notaris" required>
+                        Datum van testament *
+                        <input class="input-untouched" type="date" name="datum-van-testament-notaris" required>
                     </label>
                 </fieldset>
                 <!-- EERSTE ONDERDEEL TERUG EN VOLGENDE -->
@@ -233,88 +233,88 @@
                     <legend><b>2A</b></legend>
                     <p><i>Vul 1 van de 3 in: het burgerservicenummer of RSIN van de gemachtigde, het beconnummer van de adviseur of het protocolnummer van de notaris.</i></p>
                     <label>
-                        Burgerservicenummer / RSIN gemachtigde
-                        <input type="number" name="burgerservicenummer-rsin-gemachtigde" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric">
+                        Burgerservicenummer / RSIN gemachtigde 
+                        <input class="input-untouched" type="number" name="burgerservicenummer-rsin-gemachtigde" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" title="Alleen cijfers toegestaan.">
                     </label>
                     <label>
-                        Beconnummer adviseur
-                        <input type="number" name="beconnummer-adviseur" minlength="1" pattern="[0-9]" inputmode="numeric">
+                        Beconnummer adviseur 
+                        <input class="input-untouched" type="number" name="beconnummer-adviseur" minlength="1" pattern="[0-9]" inputmode="numeric" title="Alleen cijfers toegestaan.">
                     </label>
                     <label>
-                        Protocolnummer notaris
-                        <input type="number" name="protocolnummer-notaris" minlength="1" pattern="[0-9]" inputmode="numeric">
+                        Protocolnummer notaris 
+                        <input class="input-untouched" type="number" name="protocolnummer-notaris" minlength="1" pattern="[0-9]" inputmode="numeric" title="Alleen cijfers toegestaan.">
                     </label>
                     <div class="grid-1">
                         <label>
-                            Voorletter(s)
-                            <input type="text" name="voorletter(s)-gemachtigde" minlength="1" required>
+                            Voorletter(s) *
+                            <input class="input-untouched" type="text" name="voorletter(s)-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                         <label>
                             Tussenvoegsel(s)
-                            <input type="text" name="tussenvoegsel(s)-gemachtigde">
+                            <input class="input-untouched" type="text" name="tussenvoegsel(s)-gemachtigde" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
                         </label>
                         <label>
-                            Achternaam
-                            <input type="text" name="achternaam-gemachtigde" minlength="1" required>
+                            Achternaam *
+                            <input class="input-untouched" type="text" name="achternaam-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                     </div>
                     <label>
-                        Naam instelling (bijvoorbeeld een notariskantoor)
-                        <input type="text" name="naam-instelling-gemachtigde" minlength="1" required>
+                        Naam instelling (bijvoorbeeld een notariskantoor) *
+                        <input class="input-untouched" type="text" name="naam-instelling-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                     </label>
                     <p><b>Adres in Nederland</b></p>
                     <div class="grid-1">
                         <label>
-                            Straat
-                            <input type="text" name="straat-gemachtigde" minlength="1" required>
+                            Straat *
+                            <input class="input-untouched" type="text" name="straat-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                         <label>
-                            Huisnummer
-                            <input type="number" name="huisnummer-gemachtigde" minlength="1" pattern="[0-9]" inputmode="numeric" required>
+                            Huisnummer *
+                            <input class="input-untouched" type="number" name="huisnummer-gemachtigde" minlength="1" pattern="[0-9]" inputmode="numeric" required title="Alleen cijfers toegestaan.">
                         </label>
                         <label>
                             Toevoeging
-                            <input type="text" name="toevoeging-gemachtigde">
+                            <input class="input-untouched" type="text" name="toevoeging-gemachtigde">
                         </label>
                         <label>
-                            Postcode
-                            <input type="text" name="postcode-gemachtigde" minlength="6" maxlength="6" required>
+                            Postcode *
+                            <input class="input-untouched" type="text" name="postcode-gemachtigde" minlength="6" maxlength="6" required>
                         </label>
                         <label>
-                            Woonplaats
-                            <input type="text" name="woonplaats-gemachtigde" minlength="1" required>
+                            Woonplaats *
+                            <input class="input-untouched" type="text" name="woonplaats-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                     </div>
                     <p><b>Adres in het buitenland</b></p>
                     <div class="grid-1">
                         <label>
-                            Straat
-                            <input type="text" name="straat-gemachtigde" minlength="1" required>
+                            Straat *
+                            <input class="input-untouched" type="text" name="straat-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                         <label>
-                            Huisnummer
-                            <input type="number" name="huisnummer-gemachtigde" minlength="1" pattern="[0-9]" inputmode="numeric" required>
+                            Huisnummer *
+                            <input class="input-untouched" type="number" name="huisnummer-gemachtigde" minlength="1" pattern="[0-9]" inputmode="numeric" required title="Alleen cijfers toegestaan.">
                         </label>
                         <label>
-                            Postcode
-                            <input type="text" name="postcode-gemachtigde" minlength="6" maxlength="6" required>
+                            Postcode *
+                            <input class="input-untouched" type="text" name="postcode-gemachtigde" minlength="6" maxlength="6" required>
                         </label>
                         <label>
-                            Woonplaats
-                            <input type="text" name="woonplaats-gemachtigde" minlength="1" required>
+                            Woonplaats *
+                            <input class="input-untouched" type="text" name="woonplaats-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                         <label>
-                            Landcode
-                            <input type="number" name="landcode-gemachtigde" minlength="3" maxlength="3" pattern="[0-9]{3}" inputmode="numeric" required>
+                            Landcode *
+                            <input class="input-untouched" type="number" name="landcode-gemachtigde" minlength="3" maxlength="3" pattern="[0-9]{3}" inputmode="numeric" required title="Alleen cijfers toegestaan.">
                         </label>
                     </div>
                     <label>
-                        Telefoonnummer
-                        <input type="number" name="telefoonnummer-gemachtigde" minlength="8" maxlength="8" pattern="[0-9]{8}" inputmode="numeric" required>
+                        Telefoonnummer *
+                        <input class="input-untouched" type="number" name="telefoonnummer-gemachtigde" minlength="8" maxlength="8" pattern="[0-9]{8}" inputmode="numeric" required title="Alleen cijfers toegestaan.">
                     </label>
                     <label>
-                        E-mailadres
-                        <input type="email" name="e-mailadres-gemachtigde" minlength="1" inputmode="email" required>
+                        E-mailadres *
+                        <input class="input-untouched" type="email" name="e-mailadres-gemachtigde" minlength="1" inputmode="email" required>
                     </label>
                 </fieldset>
                 <!-- TWEEDE ONDERDEEL TERUG EN VOLGENDE -->
@@ -338,7 +338,7 @@
                         </label>
                         <label>
                             Aantal verkrijgers
-                            <input type="number" name="aantal-verkrijgers-executeur" minlength="1" pattern="[0-9]" inputmode="numeric">
+                            <input class="input-untouched" type="number" name="aantal-verkrijgers-executeur" minlength="1" pattern="[0-9]" inputmode="numeric" title="Alleen cijfers toegestaan.">
                         </label>
                     </div>
                     <p><b>Is er geen executeur aangewezen? Kruis dan aan welke situatie voor u geldt.</b></p>
@@ -349,7 +349,7 @@
                         </label>
                         <label>
                             Aantal verkrijgers
-                            <input type="number" name="aantal-verkrijgers-erfgenaam" minlength="1" pattern="[0-9]" inputmode="numeric">
+                            <input class="input-untouched" type="number" name="aantal-verkrijgers-erfgenaam" minlength="1" pattern="[0-9]" inputmode="numeric" title="Alleen cijfers toegestaan.">
                         </label>
                     </div>
                     <div class="hr"></div>
@@ -360,7 +360,7 @@
                         </label>
                         <label>
                             Aantal verkrijgers
-                            <input type="number" name="aantal-verkrijgers-erfgenaam-samen" minlength="1" pattern="[0-9]" inputmode="numeric">
+                            <input class="input-untouched" type="number" name="aantal-verkrijgers-erfgenaam-samen" minlength="1" pattern="[0-9]" inputmode="numeric" title="Alleen cijfers toegestaan.">
                         </label>
                     </div>
                     <div class="hr"></div>
@@ -378,7 +378,7 @@
                         </label>
                         <label>
                             Aantal verkrijgers
-                            <input type="number" name="aantal-verkrijgers-geen-erfgenaam" minlength="1" pattern="[0-9]" inputmode="numeric">
+                            <input class="input-untouched" type="number" name="aantal-verkrijgers-geen-erfgenaam" minlength="1" pattern="[0-9]" inputmode="numeric" title="Alleen cijfers toegestaan.">
                         </label>
                     </div>
                 </fieldset>
@@ -401,19 +401,19 @@
                     <div class="grid-1">
                         <label>
                             Burgerservicenummer / RSIN
-                            <input type="number" name="burgerservicenummer-rsin-verkrijger-1" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric">
+                            <input class="input-untouched" type="number" name="burgerservicenummer-rsin-verkrijger-1" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" title="Alleen cijfers toegestaan.">
                         </label>
                         <label>
                             Voorletter(s)
-                            <input type="text" name="voorletter(s)-verkrijger-1" minlength="1">
+                            <input class="input-untouched" type="text" name="voorletter(s)-verkrijger-1" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
                         </label>
                         <label>
                             Tussenvoegsel(s)
-                            <input type="text" name="tussenvoegsel(s)-verkrijger-1">
+                            <input class="input-untouched" type="text" name="tussenvoegsel(s)-verkrijger-1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
                         </label>
                         <label>
                             Achternaam
-                            <input type="text" name="achternaam-verkrijger-1" minlength="1">
+                            <input class="input-untouched" type="text" name="achternaam-verkrijger-1" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
                         </label>
                     </div>
                     <div class="grid-2">
@@ -489,64 +489,64 @@
                     <legend><b>3E</b></legend>
                     <p><b>Gegevens van de executeur of gemachtigde</b></p>
                     <label>
-                        Burgerservicenummer / RSIN
-                        <input type="number" name="burgerservicenummer-rsin-executeur-of-gemachtigde" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" required>
+                        Burgerservicenummer / RSIN *
+                        <input class="input-untouched" type="number" name="burgerservicenummer-rsin-executeur-of-gemachtigde" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" required title="Alleen cijfers toegestaan.">
                     </label>
                     <label>
                         Protocolnummer (als de executeur ook notaris is)
-                        <input type="number" name="protocolnummer-executeur-of-gemachtigde" minlength="1" pattern="[0-9]" inputmode="numeric">
+                        <input class="input-untouched" type="number" name="protocolnummer-executeur-of-gemachtigde" minlength="1" pattern="[0-9]" inputmode="numeric" title="Alleen cijfers toegestaan.">
                     </label>
                     <label>
-                        Beconnummer van de adviseur
-                        <input type="number" name="beconnummer-adviseur" minlength="1" pattern="[0-9]" inputmode="numeric" required>
+                        Beconnummer van de adviseur *
+                        <input class="input-untouched" type="number" name="beconnummer-adviseur" minlength="1" pattern="[0-9]" inputmode="numeric" required title="Alleen cijfers toegestaan.">
                     </label>
                     <div class="grid-1">
                         <label>
-                            Voorletter(s)
-                            <input type="text" name="voorletter(s)-executeur-of-gemachtigde" minlength="1" required>
+                            Voorletter(s) *
+                            <input class="input-untouched" type="text" name="voorletter(s)-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                         <label>
                             Tussenvoegsel(s)
-                            <input type="text" name="tussenvoegsel(s)-executeur-of-gemachtigde">
+                            <input class="input-untouched" type="text" name="tussenvoegsel(s)-executeur-of-gemachtigde" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
                         </label>
                         <label>
-                            Achternaam
-                            <input type="text" name="achternaam-executeur-of-gemachtigde" minlength="1" required>
+                            Achternaam *
+                            <input class="input-untouched" type="text" name="achternaam-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                     </div>
                     <label>
-                        Naam instelling (bijvoorbeeld een notariskantoor)
-                        <input type="text" name="naam-instelling-executeur-of-gemachtigde" minlength="1" required>
+                        Naam instelling (bijvoorbeeld een notariskantoor) *
+                        <input class="input-untouched" type="text" name="naam-instelling-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                     </label>
                     <div class="grid-1">
                         <label>
-                            Straat
-                            <input type="text" name="straat-executeur-of-gemachtigde" minlength="1" required>
+                            Straat *
+                            <input class="input-untouched" type="text" name="straat-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                         <label>
-                            Huisnummer
-                            <input type="number" name="huisnummer-executeur-of-gemachtigde" minlength="1" pattern="[0-9]" inputmode="numeric" required>
+                            Huisnummer *
+                            <input class="input-untouched" type="number" name="huisnummer-executeur-of-gemachtigde" minlength="1" pattern="[0-9]" inputmode="numeric" required title="Alleen cijfers toegestaan.">
                         </label>
                         <label>
                             Toevoeging
-                            <input type="text" name="toevoeging-executeur-of-gemachtigde">
+                            <input class="input-untouched" type="text" name="toevoeging-executeur-of-gemachtigde">
                         </label>
                         <label>
-                            Postcode
-                            <input type="text" name="postcode-executeur-of-gemachtigde" minlength="6" maxlength="6" required>
+                            Postcode *
+                            <input class="input-untouched" type="text" name="postcode-executeur-of-gemachtigde" minlength="6" maxlength="6" required>
                         </label>
                         <label>
-                            Woonplaats
-                            <input type="text" name="woonplaats-executeur-of-gemachtigde" minlength="1" required>
+                            Woonplaats *
+                            <input class="input-untouched" type="text" name="woonplaats-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                     </div>
                     <label>
-                        Datum
-                        <input type="date" name="datum" required>
+                        Datum *
+                        <input class="input-untouched" type="date" name="datum" required>
                     </label>
                     <label>
-                        Handtekening
-                        <input type="text" name="handtekening-executeur-of-gemachtigde">
+                        Handtekening *
+                        <input class="input-untouched" type="text" name="handtekening-executeur-of-gemachtigde" required>
                     </label>
                 </fieldset>
                 <!-- DERDE ONDERDEEL TERUG EN VOLGENDE -->
@@ -585,6 +585,9 @@
     <footer>
         <p>© Belastingdienst 2024</p>
     </footer>
+
+    <script src="./scripts/localStorage.js"></script>
+    <script src="./scripts/formValidation.js"></script>
 
 </body>
 </html>

@@ -38,12 +38,12 @@ main form section > p {
 
 main form section fieldset {
     margin-top: 2em;
-    padding: 2em 2em;
+    padding: 1.4em;
 
     border: var(--border);
     border-radius: .2em;
 
-    background-color: var(--light-gray);
+    background-color: var(--white);
 }
 
 main form section fieldset p {
@@ -63,8 +63,6 @@ main form section fieldset label input[type=text], main form section fieldset la
     border-radius: .2em;
     
     background-color: var(--white);
-
-    color: var(--dark-gray);
 }
 
 main form section > div {
