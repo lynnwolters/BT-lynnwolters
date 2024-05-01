@@ -45,12 +45,14 @@ const accordions = document.querySelectorAll(".accordion");
 openAccordionButtons.forEach((button, index) => {
     button.addEventListener("click", () => {
         openAccordion(accordions[index]);
+        console.log("open")
     });
 });
 
 closeAccordionButtons.forEach((button, index) => {
     button.addEventListener("click", () => {
         closeAccordion(accordions[index]);
+        console.log("close");
     });
 });
 
