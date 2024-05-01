@@ -38,21 +38,44 @@ setupNavigation("#derdeOnderdeel", "#vierdeOnderdeel");
 setupNavigation("#vierdeOnderdeel", "#vijfdeOnderdeel");
 
 // FUNCTIE OM VELDEN OPEN TE KLAPPEN
-const openAccordionButtons = document.querySelectorAll(".open-accordion-button");
-const closeAccordionButtons = document.querySelectorAll(".close-accordion-button");
-const accordions = document.querySelectorAll(".accordion");
+const openAccordionButtonOne = document.querySelectorAll(".open-accordion-button-1");
+const closeAccordionButtonOne = document.querySelectorAll(".close-accordion-button-1");
+const accordionOne = document.querySelectorAll(".accordion-1");
 
-openAccordionButtons.forEach((button, index) => {
+openAccordionButtonOne.forEach((button, index) => {
     button.addEventListener("click", () => {
-        openAccordion(accordions[index]);
-        console.log("open")
+        openAccordion(accordionOne[index]);
     });
 });
 
-closeAccordionButtons.forEach((button, index) => {
+closeAccordionButtonOne.forEach((button, index) => {
     button.addEventListener("click", () => {
-        closeAccordion(accordions[index]);
-        console.log("close");
+        closeAccordion(accordionOne[index]);
+    });
+});
+
+const openAccordionButtonTwo = document.querySelectorAll(".open-accordion-button-2");
+const accordionTwo = document.querySelectorAll(".accordion-2");
+
+openAccordionButtonTwo.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        toggleAccordion(accordionTwo[index]);
+    });
+});
+
+const openAccordionButtonThree = document.querySelectorAll(".open-accordion-button-3");
+const closeAccordionButtonThree = document.querySelectorAll(".close-accordion-button-3");
+const accordionThree = document.querySelectorAll(".accordion-3");
+
+openAccordionButtonThree.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        openAccordion(accordionThree[index]);
+    });
+});
+
+closeAccordionButtonThree.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        closeAccordion(accordionThree[index]);
     });
 });
 
@@ -62,6 +85,10 @@ function openAccordion(accordion) {
 
 function closeAccordion(accordion) {
     accordion.classList.remove("open-accordion");
+}
+
+function toggleAccordion(accordion) {
+    accordion.classList.toggle("open-accordion");
 }
 
 // FUNCTIE OM GELDIGDE DATUM IN TE VOEREN

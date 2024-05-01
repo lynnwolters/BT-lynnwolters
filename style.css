@@ -49,7 +49,7 @@ input:not(.input-untouched):invalid {
     background-color: var(--dark-gray);
 }
 
-.accordion {
+.accordion-1 {
     display: none;
     
     padding: 1em 1em 0 1em;
@@ -58,7 +58,33 @@ input:not(.input-untouched):invalid {
     border-radius: .2em;
 }
 
-.accordion.open-accordion {
+.accordion-1.open-accordion {
+    display: block;
+}
+
+.accordion-2 {
+    display: none;
+    
+    padding: 1em 1em 0 1em;
+
+    border: var(--border);
+    border-radius: .2em;
+}
+
+.accordion-2.open-accordion {
+    display: block;
+}
+
+.accordion-3 {
+    display: none;
+    
+    padding: 1em 1em 0 1em;
+
+    border: var(--border);
+    border-radius: .2em;
+}
+
+.accordion-3.open-accordion {
     display: block;
 }
 
