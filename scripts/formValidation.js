@@ -64,4 +64,24 @@ function closeAccordion(accordion) {
     accordion.classList.remove("open-accordion");
 }
 
+// FUNCTIE OM GELDIGDE DATUM IN TE VOEREN
+const dateInputs = [
+    "input[name=overlijdensdatum-overledende]",
+    "input[name=datum-huwelijkse-of-partnerschapsvoorwaarden-overledende]",
+    "input[name=datum-van-testament-notaris]",
+    "input[name=datum]"
+];
+
+dateInputs.forEach((selector) => {
+    const inputElement = document.querySelector(selector);
+    if (inputElement) {
+        const today = new Date().toISOString().split('T')[0]; 
+        inputElement.max = today;
+    }
+});
+
+
+
+
+
 
