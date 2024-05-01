@@ -49,11 +49,24 @@ input:not(.input-untouched):invalid {
     border: var(--border-invalid);
 }
 
+.spacing-top {
+    margin-top: 1em;
+}
+
+.accordion {
+    display: none;
+}
+
+.accordion.open-accordion {
+    display: block;
+}
+
 :root {
     --white: #FFFFFF;
     --light-gray: #f3f3f3;
     --dark-gray: #ACACA8;
     --black: #000000;
+    --dark-red: #cc2323;
     --red: #F42626;
     --green: #119316;
     --dark-blue: #00588E;

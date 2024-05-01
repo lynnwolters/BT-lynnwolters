@@ -6,7 +6,7 @@
 
     <title>Aangifte Erfbelasting 2024</title>
 
-    <link rel="icon" type="image/x-icon" href="./images/favicon-belastingdienst.jpg">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/zFGfw4Z/favicon-belastingdienst.jpg">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./styles/header.css">
@@ -18,7 +18,7 @@
 
     <header>
         <a href="#start">
-            <img src="./images/logo-belastingdienst.png" alt="Dit is het logo van de Belastingdienst.">
+            <img src="https://i.ibb.co/Ry21cMp/logo-belastingdienst.png" alt="Dit is het logo van de Belastingdienst.">
         </a>
     </header>
 
@@ -62,7 +62,7 @@
                     <legend><b>1A</b></legend>
                     <div class="grid-1">
                         <label>
-                            Voorletter(s) *
+                            Voorletter(s) <b>*</b>
                             <input class="input-untouched" type="text" name="voorletter(s)-overledende" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                         <label>
@@ -70,16 +70,16 @@
                             <input class="input-untouched" type="text" name="tussenvoegsel(s)-overledende" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
                         </label>
                         <label>
-                            Achternaam *
+                            Achternaam <b>*</b>
                             <input class="input-untouched" type="text" name="achternaam-overledende" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                     </div>
                     <label>
-                        Burgerservicenummer *
-                        <input class="input-untouched" type="number" name="burgerservicenummer-overledene" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" required title="Alleen cijfers toegestaan.">
+                        Burgerservicenummer <b>*</b>
+                        <input class="input-untouched" type="text" name="burgerservicenummer-overledene" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" required title="Alleen cijfers toegestaan.">
                     </label>
                     <label>
-                        Overlijdensdatum *
+                        Overlijdensdatum <b>*</b>
                         <input class="input-untouched" type="date" name="overlijdensdatum-overledende" required>
                     </label>
                 </fieldset>
@@ -87,89 +87,93 @@
                 <fieldset>
                     <legend><b>1B</b></legend>
                     <div class="grid-2">
-                        <p>Was de overledene getrouwd of had de overledene een geregistreerd partner op het moment van overlijden?</p>
+                        <p>Was de overledene getrouwd of had de overledene een geregistreerd partner op het moment van overlijden? <b>*</b></p>
                         <div>
                             <label>
-                                <input type="radio" name="radio-1b-1">
+                                <input class="close-accordion-button" type="radio" name="radio-1b-1" value="nee">
                                 Nee. Ga verder met vraag 1C.
                             </label>
                             <label>
-                                <input type="radio" name="radio-1b-1">
+                                <input class="open-accordion-button" type="radio" name="radio-1b-1" value="ja">
                                 Ja
                             </label>
                         </div>
                     </div>
-                    <div class="grid-2">
-                        <p>Hadden de overledene en diens echtgenoot of geregistreerd partner huwelijkse of partnerschaps- voorwaarden laten vastleggen in een notariële akte?</p>
-                        <div>
-                            <label>
-                                <input type="radio" name="radio-1b-2">
-                                Nee
-                            </label>
-                            <label>
-                                <input type="radio" name="radio-1b-2">
-                                Ja. Stuur een kopie van de akte mee met de aangifte.
-                            </label>
+                    <div class="accordion">
+                        <div class="grid-2">
+                            <p>Hadden de overledene en diens echtgenoot of geregistreerd partner huwelijkse of partnerschaps- voorwaarden laten vastleggen in een notariële akte?</p>
+                            <div>
+                                <label>
+                                    <input type="radio" name="radio-1b-2" value="nee">
+                                    Nee
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio-1b-2" value="ja">
+                                    Ja. Stuur een kopie van de akte mee met de aangifte.
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="grid-2">
-                        <p>Hadden de overledene en diens partner een finaal verrekenbeding?</p>
-                        <div>
-                            <label>
-                                <input type="radio" name="radio-1b-3">
-                                Nee
-                            </label>
-                            <label>
-                                <input type="radio" name="radio-1b-3">
-                                Ja
-                            </label>
+                        <div class="grid-2">
+                            <p>Hadden de overledene en diens partner een finaal verrekenbeding?</p>
+                            <div>
+                                <label>
+                                    <input type="radio" name="radio-1b-3" value="nee">
+                                    Nee
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio-1b-3" value="ja">
+                                    Ja
+                                </label>
+                            </div>
                         </div>
+                        <label>
+                            Datum huwelijkse of partnerschapsvoorwaarden
+                            <input class="input-untouched" type="date" name="datum-huwelijkse-of-partnerschapsvoorwaarden-overledende">
+                        </label>
                     </div>
-                    <label>
-                        Datum huwelijkse of partnerschapsvoorwaarden *
-                        <input class="input-untouched" type="date" name="datum-huwelijkse-of-partnerschapsvoorwaarden-overledende" required>
-                    </label>
                 </fieldset>
                 <!-- 1C -->
                 <fieldset>
                     <legend><b>1C</b></legend>
                     <div class="grid-2">
-                        <p>Had de overledene kinderen?</p>
+                        <p>Had de overledene kinderen? <b>*</b></p>
                         <div>
                             <label>
-                                <input type="radio" name="radio-1b-1">
+                                <input class="close-accordion-button" type="radio" name="radio-1c-1" value="nee">
                                 Nee. Ga verder met vraag 1D.
                             </label>
                             <label>
-                                <input type="radio" name="radio-1b-1">
+                                <input class="open-accordion-button" type="radio" name="radio-1c-1" value="ja">
                                 Ja
                             </label>
                         </div>
                     </div>
-                    <div class="grid-2">
-                        <p>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</p>
-                        <div>
-                            <label>
-                                <input type="radio" name="radio-1c-2">
-                                Nee. Ga verder met vraag 1D.
-                            </label>
-                            <label>
-                                <input type="radio" name="radio-1c-2">
-                                Ja
-                            </label>
+                    <div class="accordion">
+                        <div class="grid-2">
+                            <p>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</p>
+                            <div>
+                                <label>
+                                    <input type="radio" name="radio-1c-2" value="nee">
+                                    Nee. Ga verder met vraag 1D.
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio-1c-2" value="ja">
+                                    Ja
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="grid-2">
-                        <p>Had dit overleden kind zelf kinderen?</p>
-                        <div>
-                            <label>
-                                <input type="radio" name="radio-1c-3">
-                                Nee
-                            </label>
-                            <label>
-                                <input type="radio" name="radio-1c-3">
-                                Ja
-                            </label>
+                        <div class="grid-2">
+                            <p>Had dit overleden kind zelf kinderen?</p>
+                            <div>
+                                <label>
+                                    <input type="radio" name="radio-1c-3" value="nee">
+                                    Nee
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio-1c-3" value="ja">
+                                    Ja
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </fieldset>
@@ -177,44 +181,46 @@
                 <fieldset>
                     <legend><b>1D</b></legend>
                     <div class="grid-2">
-                        <p>Had de overledene een testament?</p>
+                        <p>Had de overledene een testament? <b>*</b></p>
                         <div>
                             <label>
-                                <input type="radio" name="radio-1d-1">
+                                <input class="close-accordion-button" type="radio" name="radio-1d-1" value="nee">
                                 Nee. Ga verder met het volgende onderdeel.
                             </label>
                             <label>
-                                <input type="radio" name="radio-1d-1">
+                                <input class="open-accordion-button" type="radio" name="radio-1d-1" value="ja">
                                 Ja. Vul de gegevens in van de notaris die het testament heeft opgemaakt en de datum van het testament.
                             </label>
                         </div>
                     </div>
-                    <label>
-                        Protocolnummer *
-                        <input class="input-untouched" type="number" name="protocolnummer-notaris" minlength="1" pattern="[0-9]" inputmode="numeric" required title="Alleen cijfers toegestaan.">
-                    </label>
-                    <div class="grid-1">
+                    <div class="accordion">
                         <label>
-                            Voorletter(s) *
-                            <input class="input-untouched" type="text" name="voorletter(s)-notaris" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
+                            Protocolnummer notaris
+                            <input class="input-untouched" type="text" name="protocolnummer-notaris" minlength="4" maxlength="5" pattern="[0-9]{4,5}" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                        </label>
+                        <div class="grid-1">
+                            <label>
+                                Voorletter(s) 
+                                <input class="input-untouched" type="text" name="voorletter(s)-notaris" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                            </label>
+                            <label>
+                                Tussenvoegsel(s)
+                                <input class="input-untouched" type="text" name="tussenvoegsel(s)-notaris" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                            </label>
+                            <label>
+                                Achternaam 
+                                <input class="input-untouched" type="text" name="achternaam-notaris" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                            </label>
+                        </div>
+                        <label>
+                            Vestigingsplaats 
+                            <input class="input-untouched" type="text" name="vestigingsplaats-notaris" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
                         </label>
                         <label>
-                            Tussenvoegsel(s)
-                            <input class="input-untouched" type="text" name="tussenvoegsel(s)-notaris" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
-                        </label>
-                        <label>
-                            Achternaam *
-                            <input class="input-untouched" type="text" name="achternaam-notaris" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
+                            Datum van testament
+                            <input class="input-untouched" type="date" name="datum-van-testament-notaris">
                         </label>
                     </div>
-                    <label>
-                        Vestigingsplaats *
-                        <input class="input-untouched" type="text" name="vestigingsplaats-notaris" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
-                    </label>
-                    <label>
-                        Datum van testament *
-                        <input class="input-untouched" type="date" name="datum-van-testament-notaris" required>
-                    </label>
                 </fieldset>
                 <!-- EERSTE ONDERDEEL TERUG EN VOLGENDE -->
                 <div>
@@ -231,22 +237,22 @@
                 <!-- 2A -->
                 <fieldset>
                     <legend><b>2A</b></legend>
-                    <p><i>Vul 1 van de 3 in: het burgerservicenummer of RSIN van de gemachtigde, het beconnummer van de adviseur of het protocolnummer van de notaris.</i></p>
+                    <p><i>Vul 1 van de 3 in: het burgerservicenummer of RSIN van de gemachtigde, het beconnummer van de adviseur of het protocolnummer van de notaris. <b>*</b></i></p>
                     <label>
-                        Burgerservicenummer / RSIN gemachtigde 
-                        <input class="input-untouched" type="number" name="burgerservicenummer-rsin-gemachtigde" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                        Burgerservicenummer / RSIN 
+                        <input class="input-untouched" type="text" name="burgerservicenummer-rsin-gemachtigde" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" title="Alleen cijfers toegestaan.">
                     </label>
                     <label>
                         Beconnummer adviseur 
-                        <input class="input-untouched" type="number" name="beconnummer-adviseur" minlength="1" pattern="[0-9]" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                        <input class="input-untouched" type="text" name="beconnummer-adviseur" minlength="12" maxlength="12" pattern="[0-9]{12}" inputmode="numeric" title="Alleen cijfers toegestaan.">
                     </label>
                     <label>
                         Protocolnummer notaris 
-                        <input class="input-untouched" type="number" name="protocolnummer-notaris" minlength="1" pattern="[0-9]" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                        <input class="input-untouched" type="text" name="protocolnummer-notaris" minlength="4" maxlength="5" pattern="[0-9]{4,5}" inputmode="numeric" title="Alleen cijfers toegestaan.">
                     </label>
                     <div class="grid-1">
                         <label>
-                            Voorletter(s) *
+                            Voorletter(s) <b>*</b>
                             <input class="input-untouched" type="text" name="voorletter(s)-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                         <label>
@@ -254,66 +260,80 @@
                             <input class="input-untouched" type="text" name="tussenvoegsel(s)-gemachtigde" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
                         </label>
                         <label>
-                            Achternaam *
+                            Achternaam <b>*</b>
                             <input class="input-untouched" type="text" name="achternaam-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                         </label>
                     </div>
                     <label>
-                        Naam instelling (bijvoorbeeld een notariskantoor) *
+                        Naam instelling (bijvoorbeeld een notariskantoor) <b>*</b>
                         <input class="input-untouched" type="text" name="naam-instelling-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
                     </label>
-                    <p><b>Adres in Nederland</b></p>
-                    <div class="grid-1">
+                    <div class="grid-4">
                         <label>
-                            Straat *
-                            <input class="input-untouched" type="text" name="straat-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
+                            <input class="open-accordion-button" type="checkbox">
+                            <b>Adres in Nederland</b>
                         </label>
                         <label>
-                            Huisnummer *
-                            <input class="input-untouched" type="number" name="huisnummer-gemachtigde" minlength="1" pattern="[0-9]" inputmode="numeric" required title="Alleen cijfers toegestaan.">
-                        </label>
-                        <label>
-                            Toevoeging
-                            <input class="input-untouched" type="text" name="toevoeging-gemachtigde">
-                        </label>
-                        <label>
-                            Postcode *
-                            <input class="input-untouched" type="text" name="postcode-gemachtigde" minlength="6" maxlength="6" required>
-                        </label>
-                        <label>
-                            Woonplaats *
-                            <input class="input-untouched" type="text" name="woonplaats-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
+                            <input class="open-accordion-button" type="checkbox">
+                            <b>Adres in het buitenland</b>
                         </label>
                     </div>
-                    <p><b>Adres in het buitenland</b></p>
-                    <div class="grid-1">
-                        <label>
-                            Straat *
-                            <input class="input-untouched" type="text" name="straat-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
-                        </label>
-                        <label>
-                            Huisnummer *
-                            <input class="input-untouched" type="number" name="huisnummer-gemachtigde" minlength="1" pattern="[0-9]" inputmode="numeric" required title="Alleen cijfers toegestaan.">
-                        </label>
-                        <label>
-                            Postcode *
-                            <input class="input-untouched" type="text" name="postcode-gemachtigde" minlength="6" maxlength="6" required>
-                        </label>
-                        <label>
-                            Woonplaats *
-                            <input class="input-untouched" type="text" name="woonplaats-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
-                        </label>
-                        <label>
-                            Landcode *
-                            <input class="input-untouched" type="number" name="landcode-gemachtigde" minlength="3" maxlength="3" pattern="[0-9]{3}" inputmode="numeric" required title="Alleen cijfers toegestaan.">
-                        </label>
+                    <div class="accordion">
+                        <p><b>Adres in Nederland</b></p>
+                        <div class="grid-1 spacing-top">
+                            <label>
+                                Straat 
+                                <input class="input-untouched" type="text" name="straat-gemachtigde-nederland" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                            </label>
+                            <label>
+                                Huisnummer
+                                <input class="input-untouched" type="text" name="huisnummer-gemachtigde-nederland" minlength="1" maxlength="3" pattern="[0-9]{1,3}" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                            </label>
+                            <label>
+                                Toevoeging
+                                <input class="input-untouched" type="text" name="toevoeging-gemachtigde-nederland">
+                            </label>
+                            <label>
+                                Postcode
+                                <input class="input-untouched" type="text" name="postcode-gemachtigde-nederland" minlength="6" maxlength="6">
+                            </label>
+                            <label>
+                                Woonplaats 
+                                <input class="input-untouched" type="text" name="woonplaats-gemachtigde-nederland" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <p><b>Adres in het buitenland</b></p>
+                        <div class="grid-1 spacing-top">
+                            <label>
+                                Straat 
+                                <input class="input-untouched" type="text" name="straat-gemachtigde-buitenland" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                            </label>
+                            <label>
+                                Huisnummer 
+                                <input class="input-untouched" type="text" name="huisnummer-gemachtigde-buitenland" minlength="1" maxlength="3" pattern="[0-9]{1,3}" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                            </label>
+                            <label>
+                                Postcode 
+                                <input class="input-untouched" type="text" name="postcode-gemachtigde-buitenland" minlength="6" maxlength="6">
+                            </label>
+                            <label>
+                                Woonplaats 
+                                <input class="input-untouched" type="text" name="woonplaats-gemachtigde-buitenland" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                            </label>
+                            <label>
+                                Landcode 
+                                <input class="input-untouched" type="text" name="landcode-gemachtigde-buitenland" minlength="3" maxlength="3" pattern="[0-9]{3}" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                            </label>
+                        </div>
                     </div>
                     <label>
-                        Telefoonnummer *
-                        <input class="input-untouched" type="number" name="telefoonnummer-gemachtigde" minlength="8" maxlength="8" pattern="[0-9]{8}" inputmode="numeric" required title="Alleen cijfers toegestaan.">
+                        Telefoonnummer <b>*</b>
+                        <input class="input-untouched" type="tel" name="telefoonnummer-gemachtigde" minlength="8" maxlength="8" pattern="[0-9]{8}" inputmode="numeric" required title="Alleen cijfers toegestaan.">
                     </label>
                     <label>
-                        E-mailadres *
+                        E-mailadres <b>*</b>
                         <input class="input-untouched" type="email" name="e-mailadres-gemachtigde" minlength="1" inputmode="email" required>
                     </label>
                 </fieldset>
@@ -330,10 +350,10 @@
                 <h2>Onderdeel 3: Voor wie doet u aangifte?</h2>
                 <fieldset>
                     <legend><b>3A</b></legend>
-                    <p><i>Heeft de overledene in het testament een executeur aangewezen om de erfenis af te handelen? Dan moet de executeur aangifte doen voor alle personen en/of instellingen die iets krijgen uit de nalatenschap (verkrijgers). Lees de toelichting bij vraag 3a.</i></p>
+                    <p><i>Heeft de overledene in het testament een executeur aangewezen om de erfenis af te handelen? Dan moet de executeur aangifte doen voor alle personen en/of instellingen die iets krijgen uit de nalatenschap (verkrijgers). Lees de toelichting bij vraag 3a. <b>*</b></i></p>
                     <div class="grid-3">
                         <label>
-                            <input type="radio" name="radio-3a-1">
+                            <input type="radio" name="radio-3a-1" value="check-1">
                             Ik ben executeur en doe aangifte voor alle personen en/of instellingen die iets krijgen uit de nalatenschap (verkrijgers). Geef aan voor hoeveel verkrijgers u aangifte doet. Bent u zelf ook verkrijger? Tel uzelf dan ook mee.
                         </label>
                         <label>
@@ -344,7 +364,7 @@
                     <p><b>Is er geen executeur aangewezen? Kruis dan aan welke situatie voor u geldt.</b></p>
                     <div class="grid-3">
                         <label>
-                            <input type="radio" name="radio-3a-1">
+                            <input type="radio" name="radio-3a-1" value="check-2">
                             Ik ben erfgenaam en ben gemachtigd om aangifte te doen voor meerdere personen en/of instellingen die iets krijgen uit de nalatenschap (verkrijgers). Geef aan voor hoeveel verkrijgers u aangifte doet. Tel uzelf ook mee.
                         </label>
                         <label>
@@ -355,7 +375,7 @@
                     <div class="hr"></div>
                     <div class="grid-3">
                         <label>
-                            <input type="radio" name="radio-3a-1">
+                            <input type="radio" name="radio-3a-1" value="check-3">
                             Ik ben erfgenaam en doe samen met andere erfgenamen aangifte. Geef het aantal personen en/of instellingen aan die iets krijgen uit de nalatenschap (verkrijgers). Tel uzelf ook mee.
                         </label>
                         <label>
@@ -366,14 +386,14 @@
                     <div class="hr"></div>
                     <div class="grid-3">
                         <label>
-                            <input type="radio" name="radio-3a-1">
+                            <input type="radio" name="radio-3a-1" value="check-4">
                             Ik ben erfgenaam en doe alleen aangifte voor mijzelf.
                         </label>
                     </div>
                     <div class="hr"></div>
                     <div class="grid-3">
                         <label>
-                            <input type="radio" name="radio-3a-1">
+                            <input type="radio" name="radio-3a-1" value="check-5">
                             Ik ben geen erfgenaam, maar ben gemachtigd om aangifte te doen. Geef aan voor hoeveel verkrijgers u aangifte doet.
                         </label>
                         <label>
@@ -385,76 +405,78 @@
                 <fieldset>
                     <legend><b>3B</b></legend>
                     <div class="grid-2">
-                        <p>Zijn er verkrijgers voor wie u <b>geen</b> aangifte doet?</p>
+                        <p>Zijn er verkrijgers voor wie u <b>geen</b> aangifte doet? <b>*</b></p>
                         <div>
                             <label>
-                                <input type="radio" name="radio-3b-1">
+                                <input class="close-accordion-button" type="radio" name="radio-3b-1" value="nee">
                                 Nee. Ga verder met vraag 3C.
                             </label>
                             <label>
-                                <input type="radio" name="radio-3b-1">
+                                <input class="open-accordion-button" type="radio" name="radio-3b-1" value="ja">
                                 Ja. Vul hieronder de gegevens in van de verkrijgers waarvoor u geen aangifte doet. Gaat het om een instelling? Vul dan de naam van de instelling in bij ‘achternaam’. Het invullen van een bsn is niet verplicht, maar wel handig voor ons.
                             </label>
                         </div>
                     </div>
-                    <p><b>Verkrijger 1</b></p>
-                    <div class="grid-1">
-                        <label>
-                            Burgerservicenummer / RSIN
-                            <input class="input-untouched" type="number" name="burgerservicenummer-rsin-verkrijger-1" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" title="Alleen cijfers toegestaan.">
-                        </label>
-                        <label>
-                            Voorletter(s)
-                            <input class="input-untouched" type="text" name="voorletter(s)-verkrijger-1" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
-                        </label>
-                        <label>
-                            Tussenvoegsel(s)
-                            <input class="input-untouched" type="text" name="tussenvoegsel(s)-verkrijger-1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
-                        </label>
-                        <label>
-                            Achternaam
-                            <input class="input-untouched" type="text" name="achternaam-verkrijger-1" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
-                        </label>
-                    </div>
-                    <div class="grid-2">
-                        <p>Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?</p>
-                        <div>
+                    <div class="accordion">
+                        <p><b>Verkrijger 1</b></p>
+                        <div class="grid-1">
                             <label>
-                                <input type="radio" name="radio-3b-2">
-                                Nee
+                                Burgerservicenummer / RSIN
+                                <input class="input-untouched" type="text" name="burgerservicenummer-rsin-verkrijger-1" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" title="Alleen cijfers toegestaan.">
                             </label>
                             <label>
-                                <input type="radio" name="radio-3b-2">
-                                Ja
+                                Voorletter(s)
+                                <input class="input-untouched" type="text" name="voorletter(s)-verkrijger-1" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                            </label>
+                            <label>
+                                Tussenvoegsel(s)
+                                <input class="input-untouched" type="text" name="tussenvoegsel(s)-verkrijger-1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                            </label>
+                            <label>
+                                Achternaam
+                                <input class="input-untouched" type="text" name="achternaam-verkrijger-1" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
                             </label>
                         </div>
-                    </div>
-                    <div class="grid-2">
-                        <p>Doet deze verkrijger een beroep op diens legitieme portie (wettelijke erfdeel)?</p>
-                        <div>
-                            <label>
-                                <input type="radio" name="radio-3b-3">
-                                Nee
-                            </label>
-                            <label>
-                                <input type="radio" name="radio-3b-3">
-                                Ja
-                            </label>
+                        <div class="grid-2">
+                            <p>Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?</p>
+                            <div>
+                                <label>
+                                    <input type="radio" name="radio-3b-2" value="nee">
+                                    Nee
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio-3b-2" value="ja">
+                                    Ja
+                                </label>
+                            </div>
+                        </div>
+                        <div class="grid-2">
+                            <p>Doet deze verkrijger een beroep op diens legitieme portie (wettelijke erfdeel)?</p>
+                            <div>
+                                <label>
+                                    <input type="radio" name="radio-3b-3" value="nee">
+                                    Nee
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio-3b-3" value="ja">
+                                    Ja
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend><b>3C</b></legend>
-                    <p><b>Naar wie wilt u dat wij de aanslag erfbelasting sturen?</b></p>
+                    <p><b>Naar wie wilt u dat wij de aanslag erfbelasting sturen? <b>*</b></b></p>
                     <div class="grid-3">
                         <label>
-                            <input type="radio" name="radio-3c-1">
+                            <input type="checkbox" name="checkbox-3c-1">
                             Stuur naar iedere verkrijger van (een deel van) de erfenis een eigen belastingaanslag.
                         </label>
                     </div>
                     <div class="grid-3">
                         <label>
-                            <input type="radio" name="radio-3c-2">
+                            <input type="checkbox" name="checkbox-3c-2">
                             Stuur de belastingaanslag(en) naar de executeur of naar de erfgenaam die ook namens andere personen en/of instellingen die iets krijgen uit de nalatenschap (verkrijgers) aangifte heeft gedaan; dit mag ook de gemachtigde zijn. Wij sturen de aanslag(en) naar het adres dat u bij vraag 2 hebt ingevuld.
                         </label>
                     </div>
@@ -472,82 +494,81 @@
                         </ul>
                     </p>
                     <div class="grid-2">
-                        <p>Bent u executeur of gemachtigde?</p>
+                        <p>Bent u executeur of gemachtigde? <b>*</b></p>
                         <div>
                             <label>
-                                <input type="radio" name="radio-3d-1">
+                                <input class="close-accordion-button" type="radio" name="radio-3d-1" value="nee">
                                 Nee. Ga verder naar het volgende onderdeel.
                             </label>
                             <label>
-                                <input type="radio" name="radio-3d-1">
+                                <input class="open-accordion-button" type="radio" name="radio-3d-1" value="ja">
                                 Ja
                             </label>
                         </div>
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend><b>3E</b></legend>
-                    <p><b>Gegevens van de executeur of gemachtigde</b></p>
-                    <label>
-                        Burgerservicenummer / RSIN *
-                        <input class="input-untouched" type="number" name="burgerservicenummer-rsin-executeur-of-gemachtigde" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" required title="Alleen cijfers toegestaan.">
-                    </label>
-                    <label>
-                        Protocolnummer (als de executeur ook notaris is)
-                        <input class="input-untouched" type="number" name="protocolnummer-executeur-of-gemachtigde" minlength="1" pattern="[0-9]" inputmode="numeric" title="Alleen cijfers toegestaan.">
-                    </label>
-                    <label>
-                        Beconnummer van de adviseur *
-                        <input class="input-untouched" type="number" name="beconnummer-adviseur" minlength="1" pattern="[0-9]" inputmode="numeric" required title="Alleen cijfers toegestaan.">
-                    </label>
-                    <div class="grid-1">
+                    <div class="accordion">
+                        <p><b>Gegevens van de executeur of gemachtigde</b></p>
                         <label>
-                            Voorletter(s) *
-                            <input class="input-untouched" type="text" name="voorletter(s)-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
+                            Burgerservicenummer / RSIN 
+                            <input class="input-untouched" type="text" name="burgerservicenummer-rsin-executeur-of-gemachtigde" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" title="Alleen cijfers toegestaan.">
                         </label>
                         <label>
-                            Tussenvoegsel(s)
-                            <input class="input-untouched" type="text" name="tussenvoegsel(s)-executeur-of-gemachtigde" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                            Protocolnummer (als de executeur ook notaris is)
+                            <input class="input-untouched" type="text" name="protocolnummer-notaris" minlength="4" maxlength="5" pattern="[0-9]{4,5}" inputmode="numeric" title="Alleen cijfers toegestaan.">
                         </label>
                         <label>
-                            Achternaam *
-                            <input class="input-untouched" type="text" name="achternaam-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
+                            Beconnummer adviseur 
+                            <input class="input-untouched" type="text" name="beconnummer-adviseur" minlength="12" maxlength="12" pattern="[0-9]{12}" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                        </label>
+                        <div class="grid-1">
+                            <label>
+                                Voorletter(s) 
+                                <input class="input-untouched" type="text" name="voorletter(s)-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                            </label>
+                            <label>
+                                Tussenvoegsel(s)
+                                <input class="input-untouched" type="text" name="tussenvoegsel(s)-executeur-of-gemachtigde" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                            </label>
+                            <label>
+                                Achternaam 
+                                <input class="input-untouched" type="text" name="achternaam-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                            </label>
+                        </div>
+                        <label>
+                            Naam instelling (bijvoorbeeld een notariskantoor) 
+                            <input class="input-untouched" type="text" name="naam-instelling-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
+                        </label>
+                        <div class="grid-1">
+                            <label>
+                                Straat 
+                                <input class="input-untouched" type="text" name="straat-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                            </label>
+                            <label>
+                                Huisnummer 
+                                <input class="input-untouched" type="text" name="huisnummer-executeur-of-gemachtigde" minlength="1" maxlength="3" pattern="[0-9]{1,3}" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                            </label>
+                            <label>
+                                Toevoeging
+                                <input class="input-untouched" type="text" name="toevoeging-executeur-of-gemachtigde">
+                            </label>
+                            <label>
+                                Postcode 
+                                <input class="input-untouched" type="text" name="postcode-executeur-of-gemachtigde" minlength="6" maxlength="6">
+                            </label>
+                            <label>
+                                Woonplaats 
+                                <input class="input-untouched" type="text" name="woonplaats-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                            </label>
+                        </div>
+                        <label>
+                            Datum 
+                            <input class="input-untouched" type="date" name="datum">
+                        </label>
+                        <label>
+                            Handtekening 
+                            <input class="input-untouched" type="text" name="handtekening-executeur-of-gemachtigde">
                         </label>
                     </div>
-                    <label>
-                        Naam instelling (bijvoorbeeld een notariskantoor) *
-                        <input class="input-untouched" type="text" name="naam-instelling-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
-                    </label>
-                    <div class="grid-1">
-                        <label>
-                            Straat *
-                            <input class="input-untouched" type="text" name="straat-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
-                        </label>
-                        <label>
-                            Huisnummer *
-                            <input class="input-untouched" type="number" name="huisnummer-executeur-of-gemachtigde" minlength="1" pattern="[0-9]" inputmode="numeric" required title="Alleen cijfers toegestaan.">
-                        </label>
-                        <label>
-                            Toevoeging
-                            <input class="input-untouched" type="text" name="toevoeging-executeur-of-gemachtigde">
-                        </label>
-                        <label>
-                            Postcode *
-                            <input class="input-untouched" type="text" name="postcode-executeur-of-gemachtigde" minlength="6" maxlength="6" required>
-                        </label>
-                        <label>
-                            Woonplaats *
-                            <input class="input-untouched" type="text" name="woonplaats-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
-                        </label>
-                    </div>
-                    <label>
-                        Datum *
-                        <input class="input-untouched" type="date" name="datum" required>
-                    </label>
-                    <label>
-                        Handtekening *
-                        <input class="input-untouched" type="text" name="handtekening-executeur-of-gemachtigde" required>
-                    </label>
                 </fieldset>
                 <!-- DERDE ONDERDEEL TERUG EN VOLGENDE -->
                 <div>
