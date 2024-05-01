@@ -28,8 +28,23 @@ h2 {
     font-size: 1.2em;
 }
 
-p, a, legend, label, li {
+p, a, legend, li, label, summary {
     font-size: .8em;
+    line-height: 140%;
+}
+
+details {
+    margin-bottom: 1em;
+    padding: 1em 1em 0 1em;
+
+    border: var(--border);
+    border-radius: .2em;
+
+    background-color: var(--white);
+}
+
+summary {
+    margin-bottom: 1em;
 }
 
 input:not(.input-untouched):valid {

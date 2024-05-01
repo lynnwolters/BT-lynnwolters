@@ -26,6 +26,10 @@ main > section a {
     color: var(--white);
 }
 
+main form section:nth-of-type(2) details {
+    margin-top: 1em
+}
+
 main form section:nth-of-type(3) .accordion-2 {
     margin-bottom: 1em;
 }
@@ -60,7 +64,7 @@ main form section fieldset p {
     margin-bottom: 1em;
 }
 
-main form section fieldset label input[type=text], main form section fieldset label input[type=number], main form section fieldset label input[type=date], main form section fieldset label input[type=email], main form section fieldset label input[type=tel] {
+main form section fieldset label input[type=text], main form section fieldset label input[type=number], main form section fieldset label input[type=date], main form section fieldset label input[type=email], main form section fieldset label input[type=tel], main form section fieldset label input[type=file] {
     width: 100%;
     height: 2em;
 
@@ -73,6 +77,12 @@ main form section fieldset label input[type=text], main form section fieldset la
     border-radius: .2em;
     
     background-color: var(--white);
+}
+
+main form section fieldset label input[type=file]  {
+    padding: 0;
+    
+    border: none;
 }
 
 main form section > div {
