@@ -441,11 +441,11 @@
                     </div>
                     <label>
                         Telefoonnummer <b>*</b>
-                        <input class="input-untouched" type="tel" name="telefoonnummer-gemachtigde" minlength="8" maxlength="8" pattern="[0-9]{8}" inputmode="numeric" required title="Alleen cijfers toegestaan.">
+                        <input class="input-untouched" type="tel" name="telefoonnummer-gemachtigde" minlength="8" maxlength="8" pattern="[0-9]{8}" required title="Alleen cijfers toegestaan.">
                     </label>
                     <label>
                         E-mailadres <b>*</b>
-                        <input class="input-untouched" type="email" name="e-mailadres-gemachtigde" minlength="1" inputmode="email" required>
+                        <input class="input-untouched" type="email" name="e-mailadres-gemachtigde" minlength="1" required>
                     </label>
                 </fieldset>
                 <!-- TWEEDE ONDERDEEL TERUG EN VOLGENDE -->
@@ -469,7 +469,7 @@
                         </label>
                         <label>
                             Aantal verkrijgers
-                            <input class="input-untouched" type="number" name="aantal-verkrijgers-executeur" minlength="1" pattern="[0-9]" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                            <input class="input-untouched" type="number" name="aantal-verkrijgers-executeur" title="Alleen cijfers toegestaan.">
                         </label>
                     </div>
                     <p><b>Is er geen executeur aangewezen? Kruis dan aan welke situatie voor u geldt.</b></p>
@@ -480,7 +480,7 @@
                         </label>
                         <label>
                             Aantal verkrijgers
-                            <input class="input-untouched" type="number" name="aantal-verkrijgers-erfgenaam" minlength="1" pattern="[0-9]" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                            <input class="input-untouched" type="number" name="aantal-verkrijgers-erfgenaam" title="Alleen cijfers toegestaan.">
                         </label>
                     </div>
                     <div class="hr"></div>
@@ -491,7 +491,7 @@
                         </label>
                         <label>
                             Aantal verkrijgers
-                            <input class="input-untouched" type="number" name="aantal-verkrijgers-erfgenaam-samen" minlength="1" pattern="[0-9]" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                            <input class="input-untouched" type="number" name="aantal-verkrijgers-erfgenaam-samen" title="Alleen cijfers toegestaan.">
                         </label>
                     </div>
                     <div class="hr"></div>
@@ -509,7 +509,7 @@
                         </label>
                         <label>
                             Aantal verkrijgers
-                            <input class="input-untouched" type="number" name="aantal-verkrijgers-geen-erfgenaam" minlength="1" pattern="[0-9]" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                            <input class="input-untouched" type="number" name="aantal-verkrijgers-geen-erfgenaam" title="Alleen cijfers toegestaan.">
                         </label>
                     </div>
                 </fieldset>
@@ -560,49 +560,210 @@
                         </div>
                     </div>
                     <div class="accordion-3">
-                        <p><b>Verkrijger 1</b></p>
-                        <div class="grid-1">
+                        <div class="grid-4">
                             <label>
-                                Burgerservicenummer / RSIN
-                                <input class="input-untouched" type="text" name="burgerservicenummer-rsin-verkrijger-1" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                                <input class="open-accordion-button-2" type="checkbox" name="checkbox-3b-1">
+                                Verkrijger 1
                             </label>
                             <label>
-                                Voorletter(s)
-                                <input class="input-untouched" type="text" name="voorletter(s)-verkrijger-1" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                                <input class="open-accordion-button-2" type="checkbox" name="checkbox-3b-1" disabled>
+                                Verkrijger 2
                             </label>
                             <label>
-                                Tussenvoegsel(s)
-                                <input class="input-untouched" type="text" name="tussenvoegsel(s)-verkrijger-1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                                <input class="open-accordion-button-2" type="checkbox" name="checkbox-3b-1" disabled>
+                                Verkrijger 3
                             </label>
                             <label>
-                                Achternaam
-                                <input class="input-untouched" type="text" name="achternaam-verkrijger-1" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                                <input class="open-accordion-button-2" type="checkbox" name="checkbox-3b-1" disabled>
+                                Verkrijger 4
                             </label>
                         </div>
-                        <div class="grid-2">
-                            <p>Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?</p>
-                            <div>
+                        <div class="accordion-2">
+                            <p><b>Verkrijger 1</b></p>
+                            <div class="grid-1">
                                 <label>
-                                    <input type="radio" name="radio-3b-2" value="nee">
-                                    Nee
+                                    Burgerservicenummer / RSIN
+                                    <input class="input-untouched" type="text" name="burgerservicenummer-rsin-verkrijger-1" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" title="Alleen cijfers toegestaan.">
                                 </label>
                                 <label>
-                                    <input type="radio" name="radio-3b-2" value="ja">
-                                    Ja
+                                    Voorletter(s)
+                                    <input class="input-untouched" type="text" name="voorletter(s)-verkrijger-1" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                                </label>
+                                <label>
+                                    Tussenvoegsel(s)
+                                    <input class="input-untouched" type="text" name="tussenvoegsel(s)-verkrijger-1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                                </label>
+                                <label>
+                                    Achternaam
+                                    <input class="input-untouched" type="text" name="achternaam-verkrijger-1" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
                                 </label>
                             </div>
+                            <div class="grid-2">
+                                <p>Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?</p>
+                                <div>
+                                    <label>
+                                        <input type="radio" name="radio-3b-2" value="nee">
+                                        Nee
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio-3b-2" value="ja">
+                                        Ja
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="grid-2">
+                                <p>Doet deze verkrijger een beroep op diens legitieme portie (wettelijke erfdeel)?</p>
+                                <div>
+                                    <label>
+                                        <input type="radio" name="radio-3b-3" value="nee">
+                                        Nee
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio-3b-3" value="ja">
+                                        Ja
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="grid-2">
-                            <p>Doet deze verkrijger een beroep op diens legitieme portie (wettelijke erfdeel)?</p>
-                            <div>
+                        <div class="accordion-2">
+                            <p><b>Verkrijger 2</b></p>
+                            <div class="grid-1">
                                 <label>
-                                    <input type="radio" name="radio-3b-3" value="nee">
-                                    Nee
+                                    Burgerservicenummer / RSIN
+                                    <input class="input-untouched" type="text" name="burgerservicenummer-rsin-verkrijger-2" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" title="Alleen cijfers toegestaan.">
                                 </label>
                                 <label>
-                                    <input type="radio" name="radio-3b-3" value="ja">
-                                    Ja
+                                    Voorletter(s)
+                                    <input class="input-untouched" type="text" name="voorletter(s)-verkrijger-2" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
                                 </label>
+                                <label>
+                                    Tussenvoegsel(s)
+                                    <input class="input-untouched" type="text" name="tussenvoegsel(s)-verkrijger-2" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                                </label>
+                                <label>
+                                    Achternaam
+                                    <input class="input-untouched" type="text" name="achternaam-verkrijger-2" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                                </label>
+                            </div>
+                            <div class="grid-2">
+                                <p>Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?</p>
+                                <div>
+                                    <label>
+                                        <input type="radio" name="radio-3b-2" value="nee">
+                                        Nee
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio-3b-2" value="ja">
+                                        Ja
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="grid-2">
+                                <p>Doet deze verkrijger een beroep op diens legitieme portie (wettelijke erfdeel)?</p>
+                                <div>
+                                    <label>
+                                        <input type="radio" name="radio-3b-3" value="nee">
+                                        Nee
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio-3b-3" value="ja">
+                                        Ja
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-2">
+                            <p><b>Verkrijger 3</b></p>
+                            <div class="grid-1">
+                                <label>
+                                    Burgerservicenummer / RSIN
+                                    <input class="input-untouched" type="text" name="burgerservicenummer-rsin-verkrijger-3" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                                </label>
+                                <label>
+                                    Voorletter(s)
+                                    <input class="input-untouched" type="text" name="voorletter(s)-verkrijger-3" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                                </label>
+                                <label>
+                                    Tussenvoegsel(s)
+                                    <input class="input-untouched" type="text" name="tussenvoegsel(s)-verkrijger-3" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                                </label>
+                                <label>
+                                    Achternaam
+                                    <input class="input-untouched" type="text" name="achternaam-verkrijger-3" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                                </label>
+                            </div>
+                            <div class="grid-2">
+                                <p>Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?</p>
+                                <div>
+                                    <label>
+                                        <input type="radio" name="radio-3b-2" value="nee">
+                                        Nee
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio-3b-2" value="ja">
+                                        Ja
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="grid-2">
+                                <p>Doet deze verkrijger een beroep op diens legitieme portie (wettelijke erfdeel)?</p>
+                                <div>
+                                    <label>
+                                        <input type="radio" name="radio-3b-3" value="nee">
+                                        Nee
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio-3b-3" value="ja">
+                                        Ja
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-2">
+                            <p><b>Verkrijger 4</b></p>
+                            <div class="grid-1">
+                                <label>
+                                    Burgerservicenummer / RSIN
+                                    <input class="input-untouched" type="text" name="burgerservicenummer-rsin-verkrijger-4" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" title="Alleen cijfers toegestaan.">
+                                </label>
+                                <label>
+                                    Voorletter(s)
+                                    <input class="input-untouched" type="text" name="voorletter(s)-verkrijger-4" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                                </label>
+                                <label>
+                                    Tussenvoegsel(s)
+                                    <input class="input-untouched" type="text" name="tussenvoegsel(s)-verkrijger-4" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                                </label>
+                                <label>
+                                    Achternaam
+                                    <input class="input-untouched" type="text" name="achternaam-verkrijger-4" minlength="1" pattern="[A-Za-z]+" title="Alleen letters toegestaan.">
+                                </label>
+                            </div>
+                            <div class="grid-2">
+                                <p>Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?</p>
+                                <div>
+                                    <label>
+                                        <input type="radio" name="radio-3b-2" value="nee">
+                                        Nee
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio-3b-2" value="ja">
+                                        Ja
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="grid-2">
+                                <p>Doet deze verkrijger een beroep op diens legitieme portie (wettelijke erfdeel)?</p>
+                                <div>
+                                    <label>
+                                        <input type="radio" name="radio-3b-3" value="nee">
+                                        Nee
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio-3b-3" value="ja">
+                                        Ja
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -658,11 +819,8 @@
                         Onderteken deze aangifte als volgt:
                         <ul>
                             <li>- Bent u executeur? Dan moet u aangifte doen voor alle personen en/of instellingen die iets krijgen uit de nalatenschap (verkrijgers). U ondertekent als enige dit aangifteformulier.</li>
-                            <br>
                             <li>- Bent u gemachtigde? Dan ondertekent u dit aangifteformulier voor de personen door wie u gemachtigd bent. Zij hoeven het aangifteformulier niet zelf te ondertekenen.</li>
-                            <br>
                             <li>- Bent u erfgenaam en doet u samen met andere erfgenamen aangifte? Dan moeten de erfgenamen het aangifteformulier zelf ondertekenen bij vraag 4g.</li>
-                            <br>
                             <li>- Bent u erfgenaam en doet u alleen voor uzelf aangifte? Dan ondertekent u het aangifteformulier zelf bij vraag 4g.</li>
                         </ul>
                     </p>
@@ -739,7 +897,7 @@
                         </label>
                         <label>
                             Handtekening 
-                            <input class="input-untouched" type="file" accept="image/*,.pdf"" name="handtekening-executeur-of-gemachtigde">
+                            <input class="input-untouched" type="file" accept="image/*,.pdf" name="handtekening-executeur-of-gemachtigde">
                         </label>
                     </div>
                 </fieldset>
@@ -769,10 +927,8 @@
                 <div>
                     <a href="#vierdeOnderdeel">Terug</a>
                     <input type="submit"/>
-                </label>
                 </div>
             </section>
-
         </form>
     </main>
 

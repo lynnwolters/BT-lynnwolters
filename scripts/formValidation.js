@@ -102,10 +102,26 @@ const dateInputs = [
 dateInputs.forEach((selector) => {
     const inputElement = document.querySelector(selector);
     if (inputElement) {
-        const today = new Date().toISOString().split('T')[0]; 
+        const today = new Date().toISOString().split("T")[0]; 
         inputElement.max = today;
     }
 });
+
+// FUNCTIE OM VERKRIJGER VELDEN TOE TE VOEGEN
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+checkboxes.forEach((checkbox, index) => {
+    checkbox.addEventListener("change", function() {
+        if (checkbox.checked && index < checkboxes.length - 1) {
+            checkboxes[index + 1].disabled = false;
+        } else {
+            for (let i = index + 1; i < checkboxes.length; i++) {
+                checkboxes[i].checked = false;
+                checkboxes[i].disabled = true;
+            }
+        }
+    });
+});
+
 
 
 
