@@ -12,6 +12,8 @@ main > section {
 
 main > section h1 {
     margin: 2em 0;
+
+    text-align: center;
 }
 
 main > section a {
