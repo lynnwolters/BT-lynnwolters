@@ -54,6 +54,12 @@ Om de form validatie iets beter te laten verlopen heb ik een functie gemaakt waa
 
 Ik heb een functie gemaakt die ervoor zorgt dat als je op ja of nee radio button klikt dat er dan een accordion opengaat met het vervolg van de vraag. Dit heb ik ook bij verkrijgers gedaan alleen dan dat je verkrijgers toe kan voegen aan de hand van hoeveel je er wilt hebben.
 
+# Bronnen
 
+- https://designlab.com/blog/form-ui-design-best-practices (do's en dont's bij het designen van een form)
+- https://blog.logrocket.com/localstorage-javascript-complete-guide/ (localstorage)
+- https://www.a11yproject.com/checklist/ (checklist accessibility)
+- https://validator.w3.org/ (HTML valideren)
+- https://www.google.com/search?q=mdn+web+docs+accessibility&rlz=1C5CHFA_enNL1040NL1040&oq=mdn+web+docs+acc&gs_lcrp=EgZjaHJvbWUqCQgAEAAYExiABDIJCAAQABgTGIAEMgYIARBFGDkyCggCEAAYgAQYogQyCggDEAAYgAQYogQyCggEEAAYgAQYogQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgzMjczajBqOagCALACAA&sourceid=chrome&ie=UTF-8 (accessibility)
  
 
