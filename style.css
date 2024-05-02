@@ -56,6 +56,8 @@ input:not(.input-untouched):invalid {
     border: var(--border-invalid);
 }
 
+/* HORIZONTAL LINE OM CONTENT TE SPLITSEN */
+
 .hr {
     width: 100%;
     height: .02em;
@@ -64,6 +66,8 @@ input:not(.input-untouched):invalid {
 
     background-color: var(--dark-gray);
 }
+
+/* ACCORDIONS VOOR EERSTE ONDERDEEL */
 
 .accordion-1 {
     display: none;
@@ -78,6 +82,8 @@ input:not(.input-untouched):invalid {
     display: block;
 }
 
+/* ACCORDIONS VOOR TWEEDE ONDERDEEL */
+
 .accordion-2 {
     display: none;
     
@@ -90,6 +96,8 @@ input:not(.input-untouched):invalid {
 .accordion-2.open-accordion {
     display: block;
 }
+
+/* ACCORDION VOOR DERDE ONDERDEEL */
 
 .accordion-3 {
     display: none;

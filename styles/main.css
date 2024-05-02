@@ -34,6 +34,8 @@ main form section:nth-of-type(3) .accordion-2 {
     margin-bottom: 1em;
 }
 
+/* NAVIGEREN DOOR ONDERDELEN HEEN */
+
 main form section:not(:target) {
     display: none;
 }
@@ -105,6 +107,8 @@ main form section > div a {
 main form section > div a:hover {
     background-color: var(--light-blue);
 }
+
+/* GRIDS OM INPUT GROEPEN TE POSITIONEREN */
 
 .grid-1 {
     display: grid;
