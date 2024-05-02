@@ -28,9 +28,10 @@ h2 {
     font-size: 1.2em;
 }
 
-p, a, legend, li, label, summary {
+p, a, legend, li, label, summary, h3 {
     font-size: .8em;
     line-height: 140%;
+    font-weight: normal;
 }
 
 details {

@@ -17,28 +17,28 @@
 <body>
 
     <header>
-        <a href="#index">
+        <a aria-hidden="true" href="#index">
             <img src="https://i.ibb.co/Ry21cMp/logo-belastingdienst.png" alt="Dit is het logo van de Belastingdienst.">
         </a>
     </header>
 
-    <nav>
+    <nav aria-hidden="true">
         <ul>
             <div></div>
             <li>
-                <a href="#eersteOnderdeel">1</a>
+                <a tabindex="-1"  href="#eersteOnderdeel">1</a>
             </li>
             <li>
-                <a href="#tweedeOnderdeel">2</a>
+                <a tabindex="-1"  href="#tweedeOnderdeel">2</a>
             </li>
             <li>
-                <a href="#derdeOnderdeel">3</a>
+                <a tabindex="-1" href="#derdeOnderdeel">3</a>
             </li>
             <li>
-                <a href="#vierdeOnderdeel">4</a>
+                <a tabindex="-1" href="#vierdeOnderdeel">4</a>
             </li>
             <li>
-                <a href="#vijfdeOnderdeel">5</a>
+                <a tabindex="-1" href="#vijfdeOnderdeel">5</a>
             </li>
         </ul>
     </nav>
@@ -49,21 +49,21 @@
             <!-- TITEL START -->
             <h1>Aangifte Erfbelasting 2024</h1>
             <!-- START KNOP -->
-            <a href="#eersteOnderdeel">Start</a>
+            <a href="#eersteOnderdeel">Start met de aangifte</a>
         </section>
         <form action="#" method="post">
             <!-- EERSTE ONDERDEEL -->
             <section id="eersteOnderdeel">
                 <!-- TITEL EN BESCHRIJVING EERSTE ONDERDEEL -->
                 <h2>Onderdeel 1: Gegevens van de overledene</h2>
-                <p><i>Vul hier de gegevens in van de overledene.</i></p>
+                <h3><i>Vul hier de gegevens in van de overledene.</i></h3>
                 <!-- 1A -->
                 <fieldset>
                     <legend><b>1A</b></legend>
                     <div class="grid-1">
                         <label>
                             Voorletter(s) <b>*</b>
-                            <input class="input-untouched" type="text" name="voorletter(s)-overledende" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
+                            <input class="input-untouched" type="text" name="voorletter(s)-overledende" minlength="1" pattern="[A-Za-z]+" required aria-required title="Alleen letters toegestaan.">
                         </label>
                         <label>
                             Tussenvoegsel(s)
@@ -71,16 +71,16 @@
                         </label>
                         <label>
                             Achternaam <b>*</b>
-                            <input class="input-untouched" type="text" name="achternaam-overledende" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
+                            <input class="input-untouched" type="text" name="achternaam-overledende" minlength="1" pattern="[A-Za-z]+" required aria-required title="Alleen letters toegestaan.">
                         </label>
                     </div>
                     <label>
                         Burgerservicenummer <b>*</b>
-                        <input class="input-untouched" type="text" name="burgerservicenummer-overledene" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" required title="Alleen cijfers toegestaan.">
+                        <input class="input-untouched" type="text" name="burgerservicenummer-overledene" minlength="9" maxlength="9" pattern="[0-9]{9}" inputmode="numeric" required aria-required title="Alleen cijfers toegestaan.">
                     </label>
                     <label>
                         Overlijdensdatum <b>*</b>
-                        <input class="input-untouched" type="date" name="overlijdensdatum-overledende" required>
+                        <input class="input-untouched" type="date" name="overlijdensdatum-overledende" required aria-required>
                     </label>
                 </fieldset>
                 <!-- 1B -->
@@ -304,8 +304,8 @@
                 </fieldset>
                 <!-- EERSTE ONDERDEEL TERUG EN VOLGENDE -->
                 <div>
-                    <a href="#start">Terug</a>
-                    <a href="#tweedeOnderdeel">Volgende</a>
+                    <a href="#start">Ga terug naar start</a>
+                    <a href="#tweedeOnderdeel">Volgende onderdeel</a>
                 </div>
             </section>
 
@@ -313,7 +313,7 @@
             <section id="tweedeOnderdeel">
                 <!-- TITEL EN BESCHRIJVING TWEEDE ONDERDEEL -->
                 <h2>Onderdeel 2: Gegevens gemachtigde</h2>
-                <p><i>Vul de gegevens van de gemachtigde in. De gemachtigde is degene die namens 1 of meerdere personen en/of instellingen aangifte doet. Het invullen van een telefoonnummer of e-mailadres is niet verplicht, maar wel handig. Dan kunnen wij u makkelijker vragen stellen of uitleg geven.</i></p>
+                <h3><i>Vul de gegevens van de gemachtigde in. De gemachtigde is degene die namens 1 of meerdere personen en/of instellingen aangifte doet. Het invullen van een telefoonnummer of e-mailadres is niet verplicht, maar wel handig. Dan kunnen wij u makkelijker vragen stellen of uitleg geven.</i></h3>
                 <details>
                     <summary>Toelichting onderdeel 2</summary>
                     <p>
@@ -364,7 +364,7 @@
                     <div class="grid-1">
                         <label>
                             Voorletter(s) <b>*</b>
-                            <input class="input-untouched" type="text" name="voorletter(s)-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
+                            <input class="input-untouched" type="text" name="voorletter(s)-gemachtigde" minlength="1" pattern="[A-Za-z]+" required aria-required title="Alleen letters toegestaan.">
                         </label>
                         <label>
                             Tussenvoegsel(s)
@@ -372,12 +372,12 @@
                         </label>
                         <label>
                             Achternaam <b>*</b>
-                            <input class="input-untouched" type="text" name="achternaam-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
+                            <input class="input-untouched" type="text" name="achternaam-gemachtigde" minlength="1" pattern="[A-Za-z]+" required aria-required title="Alleen letters toegestaan.">
                         </label>
                     </div>
                     <label>
                         Naam instelling (bijvoorbeeld een notariskantoor) <b>*</b>
-                        <input class="input-untouched" type="text" name="naam-instelling-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
+                        <input class="input-untouched" type="text" name="naam-instelling-gemachtigde" minlength="1" pattern="[A-Za-z]+" required aria-required title="Alleen letters toegestaan.">
                     </label>
                     <div class="grid-4">
                         <label>
@@ -441,17 +441,17 @@
                     </div>
                     <label>
                         Telefoonnummer <b>*</b>
-                        <input class="input-untouched" type="tel" name="telefoonnummer-gemachtigde" minlength="8" maxlength="8" pattern="[0-9]{8}" required title="Alleen cijfers toegestaan.">
+                        <input class="input-untouched" type="tel" name="telefoonnummer-gemachtigde" minlength="8" maxlength="8" pattern="[0-9]{8}" required aria-required title="Alleen cijfers toegestaan.">
                     </label>
                     <label>
                         E-mailadres <b>*</b>
-                        <input class="input-untouched" type="email" name="e-mailadres-gemachtigde" minlength="1" required>
+                        <input class="input-untouched" type="email" name="e-mailadres-gemachtigde" minlength="1" required aria-required>
                     </label>
                 </fieldset>
                 <!-- TWEEDE ONDERDEEL TERUG EN VOLGENDE -->
                 <div>
-                    <a href="#eersteOnderdeel">Terug</a>
-                    <a href="#derdeOnderdeel">Volgende</a>
+                    <a href="#eersteOnderdeel">Vorige onderdeel</a>
+                    <a href="#derdeOnderdeel">Volgende onderdeel</a>
                 </div>
             </section>
 
@@ -865,7 +865,7 @@
                         </div>
                         <label>
                             Naam instelling (bijvoorbeeld een notariskantoor) 
-                            <input class="input-untouched" type="text" name="naam-instelling-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" required title="Alleen letters toegestaan.">
+                            <input class="input-untouched" type="text" name="naam-instelling-executeur-of-gemachtigde" minlength="1" pattern="[A-Za-z]+" required aria-required title="Alleen letters toegestaan.">
                         </label>
                         <div class="grid-1">
                             <label>
@@ -901,8 +901,8 @@
                 </fieldset>
                 <!-- DERDE ONDERDEEL TERUG EN VOLGENDE -->
                 <div>
-                    <a href="#tweedeOnderdeel">Terug</a>
-                    <a href="#vierdeOnderdeel">Volgende</a>
+                    <a href="#tweedeOnderdeel">Vorige onderdeel</a>
+                    <a href="#vierdeOnderdeel">Volgende onderdeel</a>
                 </div>
             </section>
 
