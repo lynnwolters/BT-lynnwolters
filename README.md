@@ -22,9 +22,9 @@ Dit is het ontwerp dat ik als richtlijn wil gebruiken voor het bouwen van het fo
 
 Na het ontwerpen van de lay-out ben ik begonnen met het toevoegen van HTML. Ik koos ervoor om één formulier te maken in plaats van meerdere, zodat gebruikers gemakkelijk kunnen teruggaan om informatie te bewerken. Tegelijkertijd wilde ik de verschillende secties behouden, zodat alle inhoud niet op één pagina terechtkomt. Dit heb ik bereikt door secties te navigeren met behulp van de :target pseudo-klasse in CSS. Hierdoor is alleen de huidige sectie zichtbaar, terwijl de rest verborgen blijft.
 
-Vervolgens heb ik de PDF grondig bestudeerd en ontdekte ik dat er verschillende roosters (grids) werden gebruikt. Om blokken toe te voegen zonder herhaaldelijk nieuwe stijlen toe te passen, heb ik drie klassen gemaakt die ik op elk blok kon toepassen. Daarna ben ik begonnen met coderen en heb ik de volgende structuur opgebouwd:
-
 <img width="258" alt="Scherm­afbeelding 2024-05-02 om 15 44 27" src="https://github.com/lynnwolters/BT-lynnwolters/assets/47858242/bb479cd4-75b7-4a2d-a88d-e23dad52da14">
+
+Vervolgens heb ik de PDF grondig bestudeerd en ontdekte ik dat er verschillende roosters (grids) werden gebruikt. Om blokken toe te voegen zonder herhaaldelijk nieuwe stijlen toe te passen, heb ik drie klassen gemaakt die ik op elk blok kon toepassen. Daarna ben ik begonnen met coderen en heb ik de volgende structuur opgebouwd:
 
 Ik heb de invoervelden binnen de labels geplaatst om te voorkomen dat ik extra for-attributen moest toevoegen, wat de HTML overzichtelijker maakt. Bij het definiëren van de velden heb ik gekeken naar welke attributen nodig of handig waren, zoals minlength, required, of inputmode. Bovendien heb ik validatie- en invalidatiestijlen toegepast op alle velden, die ik later heb uitgebreid met JavaScript voor interactieve feedback.
 
