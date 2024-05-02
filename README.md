@@ -20,39 +20,41 @@ Dit is het ontwerp dat ik als richtlijn wil gebruiken voor het bouwen van het fo
 
 ## Toevoegen van HTML
 
-Na het designen ben ik de HTML gaan toevoegen. Ik heb ervoor gekozen om één form te maken i.p.v. meerdere zodat je nog terug kan gaan om het te editten. Wel wou ik de onderdelen behouden zodat je niet alle content op één pagina hebt en dit heb ik gedaan door de door de section te navigeren met behulp van :target in CSS. De huidige section is dan zichtbaar en de rest niet.
+Na het ontwerpen van de lay-out ben ik begonnen met het toevoegen van HTML. Ik koos ervoor om één formulier te maken in plaats van meerdere, zodat gebruikers gemakkelijk kunnen teruggaan om informatie te bewerken. Tegelijkertijd wilde ik de verschillende secties behouden, zodat alle inhoud niet op één pagina terechtkomt. Dit heb ik bereikt door secties te navigeren met behulp van de :target pseudo-klasse in CSS. Hierdoor is alleen de huidige sectie zichtbaar, terwijl de rest verborgen blijft.
+
+Vervolgens heb ik de PDF grondig bestudeerd en ontdekte ik dat er verschillende roosters (grids) werden gebruikt. Om blokken toe te voegen zonder herhaaldelijk nieuwe stijlen toe te passen, heb ik drie klassen gemaakt die ik op elk blok kon toepassen. Daarna ben ik begonnen met coderen en heb ik de volgende structuur opgebouwd:
 
 <img width="258" alt="Scherm­afbeelding 2024-05-02 om 15 44 27" src="https://github.com/lynnwolters/BT-lynnwolters/assets/47858242/bb479cd4-75b7-4a2d-a88d-e23dad52da14">
 
-Daarna heb ik grondig de PDF bestudeerd waarin ik al gauw opmerkte dat er verschillende grids aanwezig waren. Omdat ik blokken toe wou voegen zonder die elke keer opnieuw te stylen heb ik hiervoor drie classes gebruikt zodat ik ze op elk blok kon zetten. Daarna ben ik begonnen met het coderen en heb ik het als volgt opgebouwd:
+Ik heb de invoervelden binnen de labels geplaatst om te voorkomen dat ik extra for-attributen moest toevoegen, wat de HTML overzichtelijker maakt. Bij het definiëren van de velden heb ik gekeken naar welke attributen nodig of handig waren, zoals minlength, required, of inputmode. Bovendien heb ik validatie- en invalidatiestijlen toegepast op alle velden, die ik later heb uitgebreid met JavaScript voor interactieve feedback.
 
-Main > form > section > fieldset > legend > label > input (type ahv waar het voor nodig was)
+Ik heb de HTML ook gevalideerd en waar mogelijk aangepast om alleen nog waarschuwingen te krijgen, zoals situaties waarin ik niets kon doen aan bepaalde inputtypes die niet worden ondersteund in verouderde browsers.
 
-Ik heb de input in de labels gezet zodat ik niet extra 'for' moest gebruiken, dit om de HTML overzichtelijk te houden. Daarnaast heb ik bij elk veld gekeken welke attributes nodig en handig waren. Zoals minlength, required of inputmode. Ook heb ik een valid en invalid styling meegegeven aan de alle velden die ik later heb uitgebreid met JavaScript. Als laatste heb ik de HTML gevalideerd en aangepast zodat ik alleen nog maar warnings over had, vaak waren dit warnings waar ik niks aan kon doen verder, zoals een input type die niet beschikbaar was in een hele oude browser.
+Daarnaast heb ik het formulier uitgebreid getest op mobiele apparaten en met behulp van een toetsenbord om de toegankelijkheid te waarborgen. Het is belangrijk dat alle gebruikers, inclusief mensen met beperkingen, de formulieren gemakkelijk kunnen gebruiken. De aangebrachte verbeteringen zorgen ervoor dat de inhoud goed zichtbaar en bruikbaar is, ongeacht het apparaat of de methode van interactie die wordt gebruikt.
 
 <img width="1033" alt="Scherm­afbeelding 2024-05-02 om 15 40 12" src="https://github.com/lynnwolters/BT-lynnwolters/assets/47858242/995cf7cd-de5e-4dec-9296-4cfc5bb87d96">
 
 ## Functies
 
-### Localstorage
+### Local Storage
 
-Ik heb localstorage toegevoegd om de ingevulde velden te bewaren als je het venster refresht of sluit. Op deze manier kan de gebruiker verder wanneer die wil zonder de voortgang te missen. Ik heb dit gedaan door eerst alles input velden op te slaan in localstorage en daarna uit de localstorage te halen, als er een window.load is zal de localstorage het opnieuw in de velden zetten.
+Ik heb Local Storage toegevoegd om de ingevulde velden te bewaren wanneer het venster wordt ververst of gesloten. Op deze manier kan de gebruiker op elk gewenst moment doorgaan zonder zijn voortgang te verliezen. Eerst sla ik alle invoervelden op in Local Storage en vervolgens haal ik deze informatie weer op bij het laden van de pagina, zodat de velden opnieuw worden ingevuld.
 
-### Valid en invalid pas zichtbaar als je begint met typen + behouden na refresh
+### Zichtbaarheid van 'Valid' en 'Invalid' pas na invoer en behoud na refresh
 
-Omdat valid en invalid in CSS puur aangeeft of een veld goed is ingevuld of niet heb ik met JS de functie uitgebreid. Als de localstorage erin werd gezet waren alle valid en invalid stylings verwijderd en werden velden al gemarkeerd zonder dat er wat in stond of dat het veld was aangeraakt.
+Aangezien 'Valid' en 'Invalid' in CSS aangeven of een veld correct is ingevuld, heb ik JS gebruikt om dit gedrag uit te breiden. Wanneer de informatie in Local Storage wordt gezet, worden alle 'Valid' en 'Invalid'-stijlen verwijderd, zodat velden niet onterecht gemarkeerd worden zonder dat er data is ingevuld of het veld is aangeraakt.
 
-### Correcte datum invoer
+### Correcte datuminvoer
 
-Ik heb een functie toegevoegd waarbij de gebruiker alleen datums kan invullen uit het verleden en niet de toekomst, zo voorkom ik dat er een ongeldige datum wordt ingevoerd.
+Ik heb een functie toegevoegd waarmee gebruikers alleen datums uit het verleden kunnen invoeren, niet uit de toekomst. Op deze manier voorkom ik dat er ongeldige datums worden ingevoerd.
 
-### Pas doorgaan naar volgende onderdelen als required fields zijn ingevuld
+### Doorgaan naar volgende secties alleen als vereiste velden zijn ingevuld
 
-Om de form validatie iets beter te laten verlopen heb ik een functie gemaakt waarbij de gebruiker pas verder kan als alle velden zijn ingevuld die verplicht zijn. Dit om te voorkomen dat ze verward raken op het einde waarom alles nog niet is ingevuld en ze niet helemaal terug te hoeven zoeken.
+Om de validatie van het formulier te verbeteren, heb ik een functie gemaakt waarmee gebruikers alleen verder kunnen gaan als alle verplichte velden zijn ingevuld. Hiermee voorkom ik dat ze op het einde verward raken over waarom niet alles is ingevuld en ze niet helemaal terug hoeven te gaan om ontbrekende informatie te zoeken.
 
-### Velden open klappen
+### Uitklappen van velden
 
-Ik heb een functie gemaakt die ervoor zorgt dat als je op ja of nee radio button klikt dat er dan een accordion opengaat met het vervolg van de vraag. Dit heb ik ook bij verkrijgers gedaan alleen dan dat je verkrijgers toe kan voegen aan de hand van hoeveel je er wilt hebben.
+Ik heb een functie toegevoegd waarmee wanneer je op 'Ja' of 'Nee' bij een radiobutton klikt, een accordion wordt geopend met het vervolg van de vraag. Dit heb ik ook gedaan voor het toevoegen van verkrijgers, waarbij je verkrijgers kunt toevoegen op basis van het aantal dat je wilt hebben.
 
 # Bronnen
 
