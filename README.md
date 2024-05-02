@@ -30,9 +30,9 @@ Ik heb de invoervelden binnen de labels geplaatst om te voorkomen dat ik extra f
 
 Ik heb de HTML ook gevalideerd en waar mogelijk aangepast om alleen nog waarschuwingen te krijgen, zoals situaties waarin ik niets kon doen aan bepaalde inputtypes die niet worden ondersteund in verouderde browsers.
 
-Daarnaast heb ik het formulier uitgebreid getest op mobiele apparaten en met behulp van een toetsenbord om de toegankelijkheid te waarborgen. Het is belangrijk dat alle gebruikers, inclusief mensen met beperkingen, de formulieren gemakkelijk kunnen gebruiken. De aangebrachte verbeteringen zorgen ervoor dat de inhoud goed zichtbaar en bruikbaar is, ongeacht het apparaat of de methode van interactie die wordt gebruikt.
-
 <img width="1033" alt="Scherm­afbeelding 2024-05-02 om 15 40 12" src="https://github.com/lynnwolters/BT-lynnwolters/assets/47858242/995cf7cd-de5e-4dec-9296-4cfc5bb87d96">
+
+Daarnaast heb ik het formulier uitgebreid getest op mobiele apparaten en met behulp van een toetsenbord om de toegankelijkheid te waarborgen. Het is belangrijk dat alle gebruikers, inclusief mensen met beperkingen, de formulieren gemakkelijk kunnen gebruiken. De aangebrachte verbeteringen zorgen ervoor dat de inhoud goed zichtbaar en bruikbaar is, ongeacht het apparaat of de methode van interactie die wordt gebruikt.
 
 ## Functies
 
